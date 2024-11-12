@@ -8,11 +8,11 @@ export const Business = () => {
 
    return (
       <div className={`${styles.contentC}`}>
-         <div className={`${styles.leftC}`}>
-            <h2>{content.business?.title}</h2>
-            <div className={`${styles.paragraphsC}`}>
+         <div>
+            <h4>{content.business?.title}</h4>
+            <div>
                {content.business?.paragraphs.map((p, i) => (
-                  <span key={i}>{p}</span>
+                  <div key={i}>{p}</div>
                ))}
             </div>
          </div>
