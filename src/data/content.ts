@@ -1,3 +1,5 @@
+import { icons } from "@/utils/icon";
+
 export const app_content: Record<string, App_Content> = {
    default: {
       info: {
@@ -59,7 +61,7 @@ export const app_content: Record<string, App_Content> = {
             "At Simply Homes we are the final buyer —no tricks, no middlemen. Unlike other so-called “investors,” we actually purchase homes directly, with a proven track record of buying numerous properties in your neighborhood (just look around!). Once we acquire a home, we revitalize it to create safe, affordable living spaces for families.",
             "We primarily serve everyday homeowners who need a reliable, straightforward solution to sell their homes as-is.",
          ],
-         banner: {},
+         banner: "",
       },
       faqs: {
          title: "FAQs",
@@ -117,34 +119,15 @@ export const app_content: Record<string, App_Content> = {
       process: {
          title: "What our process is",
          steps: [
-            {
-               title: "",
-               description: "",
-            },
-            {
-               title: "1. Submit your Property Details",
-               description: "",
-            },
-            {
-               title: "2. Connect with Simply Advisor",
-               description: "",
-            },
-            {
-               title: "3. Arrange a property walkthrough",
-               description: "",
-            },
-            {
-               title: "4. Receive your offer",
-               description: "",
-            },
-            {
-               title: "5. Schedule your closing date",
-               description: "",
-            },
+            { title: "1. Submit your Property Details", image: icons.process["process1"] },
+            { title: "2. Connect with Simply Advisor", image: icons.process["process2"] },
+            { title: "3. Arrange a property walkthrough", image: icons.process["process3"] },
+            { title: "4. Receive your offer", image: icons.process["process4"] },
+            { title: "5. Schedule your closing date", image: icons.process["process5"] },
          ],
       },
       about: { title: "Learn more about our Simply mission at", link: "" },
-   } as App_Content,
+   },
 };
 
 export type App_Content = {
@@ -158,8 +141,8 @@ export type App_Content = {
       ratings: { bigIcon: string; smallIcon: string; link: string; title: string; agencyName: string }[];
    };
    business?: { title?: string; paragraphs: string[]; banner: string };
-   faqs?: { title?: string; qas: { question: string; answer: string; expandByDefault?: boolean }[] };
+   faqs?: { title?: string; qas: { question: string; answer: string | string[]; expandByDefault?: boolean }[] };
    properties?: { title?: string; properties: { photos: string[]; location: string }[] };
-   process?: { title?: string; steps: { title: string; description: string }[] };
+   process?: { title?: string; steps: { title: string; image: string }[] };
    about?: { title?: string; link: string };
 };
