@@ -1,1 +1,35 @@
-.contentC {}
+.contentC {
+   padding: 8rem;
+   > div {
+      background-color: var(--Primary-Sun, #ffe39b);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      height: 22.4375rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 5rem;
+      gap: 4rem;
+      .banner {
+         position: relative;
+         height: 100%;
+         width: 40rem;
+         flex-shrink: 0;
+      }
+      .content {
+         display: flex;
+         flex-direction: column;
+         gap: 1.5rem;
+         > a {
+            color: var(--base-white, #fff);
+            height: 3.5rem;
+            display: flex;
+            align-items: center;
+            padding: 0 3rem;
+            background: var(--primary-500, #1a2d3d);
+            width: fit-content;
+            border-radius: 0.75rem;
+         }
+      }
+   }
+}
