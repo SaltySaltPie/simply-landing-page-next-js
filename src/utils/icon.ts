@@ -33,7 +33,7 @@ export const icons = {
             medium: CF_CDN_URL("/assets/header/hero/smallIcon/Medium.png"),
             sofi: CF_CDN_URL("/assets/header/hero/smallIcon/SoFi.png"),
             techCrunch: CF_CDN_URL("/assets/header/hero/smallIcon/TechCrunch.png"),
-            trustPilot: CF_CDN_URL("/assets/header/hero/smallIcon/trustPilot.png"),
+            trustPilot: CF_CDN_URL("/assets/header/hero/smallIcon/TrustPilot.png"),
          },
          open_in_new: CF_CDN_URL("/assets/header/phone_black.svg"),
       },
