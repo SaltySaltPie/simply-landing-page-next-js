@@ -5,6 +5,7 @@ import Carousel, { DotProps, ResponsiveType } from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
+import { CustomCarousel } from "@/components/common/customCarousel/CustomCarousel";
 export const Properties = () => {
    const { properties } = useContent().content;
    if (!properties) return null;
@@ -30,13 +31,12 @@ export const Properties = () => {
    return (
       <div className={`${styles.contentC}`} id="properties">
          <h2>{title}</h2>
-         <Carousel
+         <CustomCarousel
             responsive={responsive}
             containerClass={`${styles.carousel}`}
             arrows
             removeArrowOnDeviceType={["tablet", "mobile"]}
             showDots
-            customDot={<CustomDot />}
             autoPlay
             infinite
          >
@@ -53,13 +53,7 @@ export const Properties = () => {
                   </div>
                </div>
             ))}
-         </Carousel>
+         </CustomCarousel>
       </div>
-   );
-};
-const CustomDot = ({ onMove, index, onClick, active }: DotProps) => {
-   return (
-      <li className={`${styles.customDot} ${active ? styles.active : ""}`} onClick={onClick}>
-      </li>
    );
 };

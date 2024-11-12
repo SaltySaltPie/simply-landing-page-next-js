@@ -40,19 +40,4 @@
    }
 }
 
-.customDot {
-   transform: translateY(3rem);
-   width: 0.75rem;
-   height: 0.75rem;
-   margin-right: 0.75rem;
-   border-radius: 0.63rem;
-   background-color: var(--primary-500, #1a2d3d);
-   opacity: 0.35;
-   cursor: pointer;
-   transition: all 0.3s ease;
-   &.active {
-      width: 2.25rem;
-      background-color: var(--primary-500, #1a2d3d);
-      opacity: 1;
-   }
-}
+

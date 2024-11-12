@@ -1,6 +1,10 @@
 import { CF_CDN_URL } from "@/utils/CF_CDN_URL";
 
 export const icons = {
+   common: {
+      left_arrow: CF_CDN_URL("/assets/common/left-arrow.svg"),
+      right_arrow: CF_CDN_URL("/assets/common/right-arrow.svg"),
+   },
    nav: {
       logo: CF_CDN_URL("/assets/common/simply-logo.svg"),
       phone: CF_CDN_URL("/assets/header/phone_black.svg"),
