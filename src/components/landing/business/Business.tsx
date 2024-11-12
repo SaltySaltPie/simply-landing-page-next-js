@@ -17,7 +17,7 @@ export const Business = () => {
             </div>
          </div>
          <div className={`${styles.img}`}>
-            <Image alt="soldSimply" src={icons.business.soldSimply} fill />
+            <Image alt="soldSimply" src={icons.business.soldSimply} fill sizes="50vw" />
          </div>
       </div>
    );
