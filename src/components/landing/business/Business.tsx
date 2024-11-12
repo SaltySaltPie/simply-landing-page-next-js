@@ -14,7 +14,7 @@ export const Business = () => {
             </div>
          </div>
          <div>
-            <img src={content.business?.banner} alt="" />
+            {/* <img src={content.business?.banner} alt="" /> */}
             {/* <Image src/> */}
          </div>
       </div>
