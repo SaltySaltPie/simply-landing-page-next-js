@@ -116,6 +116,20 @@ export const app_content: Record<string, App_Content> = {
             },
          ],
       },
+      properties: {
+         title: "Look familiar? These are properties we have bought in your neighborhood",
+         properties: [
+            { location: "Town, State", photos: icons.properties["property1"] },
+            { location: "Town, State", photos: icons.properties["property2"] },
+            { location: "Town, State", photos: icons.properties["property3"] },
+            { location: "Town, State", photos: icons.properties["property1"] },
+            { location: "Town, State", photos: icons.properties["property2"] },
+            { location: "Town, State", photos: icons.properties["property3"] },
+            { location: "Town, State", photos: icons.properties["property1"] },
+            { location: "Town, State", photos: icons.properties["property2"] },
+            { location: "Town, State", photos: icons.properties["property3"] },
+         ],
+      },
       process: {
          title: "What our process is",
          steps: [
@@ -142,7 +156,7 @@ export type App_Content = {
    };
    business?: { title?: string; paragraphs: string[]; banner: string };
    faqs?: { title?: string; qas: { question: string; answer: string | string[]; expandByDefault?: boolean }[] };
-   properties?: { title?: string; properties: { photos: string[]; location: string }[] };
+   properties?: { title?: string; properties: { photos: string; location: string }[] };
    process?: { title?: string; steps: { title: string; image: string }[] };
    about?: { title?: string; link: string };
 };
