@@ -27,7 +27,7 @@ export const Nav = () => {
 
             <Link href="tel:2073006144">{content.info.phone}</Link>
          </div>
-         {/* <div className={`${styles.hamburger}`}></div> */}
+         <div className={`${styles.burger}`}></div>
       </nav>
    );
 };

@@ -45,3 +45,22 @@
       }
    }
 }
+@media (max-width: 1045px) {
+   .contentC {
+      padding: 0 2rem;
+      .navItems {
+         gap: 1rem;
+      }
+   }
+}
+@media (max-width: 1045px) {
+   .contentC {
+      padding: 0 2rem;
+      .navItems {
+         flex-direction: column;
+      }
+      .phone {
+         display: none;
+      }
+   }
+}
