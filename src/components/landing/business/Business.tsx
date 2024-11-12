@@ -1,6 +1,8 @@
 import { useContent } from "@/hooks/useContent";
 import styles from "./Business.module.scss";
 import { icons } from "@/utils/icon";
+import Image from "next/image";
+
 export const Business = () => {
    const { content } = useContent();
 
@@ -15,7 +17,7 @@ export const Business = () => {
             </div>
          </div>
          <div className={`${styles.img}`}>
-            <img src={icons.business.soldSimply} alt="" />
+            <Image alt="soldSimply" src={icons.business.soldSimply} fill />
          </div>
       </div>
    );
