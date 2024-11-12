@@ -38,8 +38,8 @@ const useNavItems = () => {
    const navItems: { title: string; href: string }[] = [{ title: "Home", href: "/" }];
    if (content["business"]) navItems.push({ title: "Our Business", href: "#business" });
    if (content["faqs"]) navItems.push({ title: "FAQs", href: "#faqs" });
-   if (content["properties"]) navItems.push({ title: "Purchased Properties", href: "#properties" });
+   if (content["properties"]) navItems.push({ title: "Properties", href: "#properties" });
    if (content["process"]) navItems.push({ title: "Our Process", href: "#process" });
-   if (content["about"]) navItems.push({ title: "About Simply Homes", href: content["about"].link });
+   if (content["about"]) navItems.push({ title: "About", href: content["about"].link });
    return { navItems };
 };
