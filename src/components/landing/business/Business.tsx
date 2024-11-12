@@ -7,7 +7,7 @@ export const Business = () => {
    const { content } = useContent();
 
    return (
-      <div className={`${styles.contentC}`}>
+      <div className={`${styles.contentC}`} id="business">
          <div className={`${styles.leftC}`}>
             <h4>{content.business?.title}</h4>
             <div className={`${styles.paragraphsC}`}>

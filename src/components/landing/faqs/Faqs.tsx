@@ -15,12 +15,6 @@ export const Faqs = () => {
             {faqs.qas.map((qa, index) => (
                <QA key={index} qa={qa} />
             ))}
-            {/* <div className={`${styles.moreQAs}`}>
-               <span>More questions</span>
-               <div className={`${styles.more}`}>
-                  <Image alt="more" src={icons.faqs.viewMore} fill />
-               </div>
-            </div> */}
          </div>
       </div>
    );

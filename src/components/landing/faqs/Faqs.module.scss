@@ -59,6 +59,7 @@
          width: 1.5rem;
          height: 1.5rem;
          position: relative;
+         flex-shrink: 0;
          overflow: hidden;
          filter: brightness(0) saturate(100%) invert(14%) sepia(13%) saturate(1934%) hue-rotate(166deg) brightness(95%)
             contrast(93%);
@@ -74,5 +75,21 @@
    }
    > hr {
       width: 100%;
+   }
+}
+
+@media (max-width: 800px) {
+   .contentC {
+      padding: 5rem 3rem;
+      gap: 1.5rem;
+      .QAsC {
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 600px) {
+   .contentC {
+      padding: 3rem 1.2rem;
    }
 }
