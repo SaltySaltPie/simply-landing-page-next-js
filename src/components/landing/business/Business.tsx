@@ -8,9 +8,9 @@ export const Business = () => {
 
    return (
       <div className={`${styles.contentC}`}>
-         <div>
+         <div className={`${styles.leftC}`}>
             <h4>{content.business?.title}</h4>
-            <div>
+            <div className={`${styles.paragraphsC}`}>
                {content.business?.paragraphs.map((p, i) => (
                   <div key={i}>{p}</div>
                ))}
