@@ -43,4 +43,26 @@
          width: 100%;
       }
    }
+   .moreQAs {
+      display: flex;
+      height: 1.75rem;
+      align-items: center;
+      gap: 0.25rem;
+      > span {
+         color: var(--info-500, #295bff);
+         font-family: "GT Walsheim";
+         font-size: 1.25rem;
+         font-style: normal;
+         font-weight: 400;
+         line-height: 140%; /* 1.75rem */
+      }
+      .more {
+         width: 1.25rem;
+         height: 1.25rem;
+         position: relative;
+         overflow: hidden;
+         filter: brightness(0) saturate(100%) invert(27%) sepia(71%) saturate(2363%) hue-rotate(219deg) brightness(102%)
+            contrast(112%);
+      }
+   }
 }

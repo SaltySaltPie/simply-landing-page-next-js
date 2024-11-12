@@ -25,6 +25,12 @@ export const Faqs = () => {
                <hr />
             </div>
          ))}
+         <div className={`${styles.moreQAs}`}>
+            <span>More questions</span>
+            <div className={`${styles.more}`}>
+               <Image alt="more" src={icons.faqs.viewMore} fill />
+            </div>
+         </div>
       </div>
    );
 };
