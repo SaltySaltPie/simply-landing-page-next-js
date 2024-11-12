@@ -1,5 +1,5 @@
 export const app_content: Record<string, App_Content> = {
-   // default: {}
+   default: {} as App_Content,
 };
 
 export type App_Content = {
