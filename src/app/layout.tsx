@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.scss";
 import { Nav } from "@/components/nav/Nav";
 import { Footer } from "@/components/footer/Footer";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
    title: "Simply Homes",
@@ -17,9 +18,11 @@ export default function RootLayout({
    return (
       <html lang="en">
          <body>
-            <Nav />
-            {children}
-            <Footer />
+            <Suspense>
+               <Nav />
+               {children}
+               <Footer />
+            </Suspense>
          </body>
       </html>
    );

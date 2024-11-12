@@ -13,7 +13,6 @@ export const Landing = () => {
    return (
       <div className={`${styles.contentC}`}>
          <Hero />
-
          {content["business"] && <Business />}
          {content["faqs"] && <Faqs />}
          {content["properties"] && <Properties />}
