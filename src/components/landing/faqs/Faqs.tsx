@@ -1,11 +1,30 @@
-import styles from './Faqs.module.scss'
-export const Faqs = ({}:TFaqsProps) => {
-  return (
-    <div className={`${styles.contentC}`}>
-       $1
-    </div>
-  );
+import { useContent } from "@/hooks/useContent";
+import styles from "./Faqs.module.scss";
+import { icons } from "@/utils/icon";
+import Image from "next/image";
+export const Faqs = () => {
+   const { content } = useContent();
+   return (
+      <div className={`${styles.contentC}`}>
+         <h2>FAQs</h2>
+         {content.faqs?.qas.map((qa, index) => (
+            <div key={index} className={`${styles.groupQAs}`}>
+               <div className={`${styles.titleC}`}>
+                  <h4>{qa.question}</h4>
+                  {qa.expandByDefault ? (
+                     <div className={`${styles.icon}`}>
+                        <Image alt={qa.question} src={icons.faqs.add} fill />
+                     </div>
+                  ) : (
+                     <div className={`${styles.icon}`}>
+                        <Image alt={qa.question} src={icons.faqs.remove} fill />
+                     </div>
+                  )}
+               </div>
+               <span>{qa.expandByDefault ? qa.answer : ""}</span>
+               <hr />
+            </div>
+         ))}
+      </div>
+   );
 };
-
-type TFaqsProps = {
-}
