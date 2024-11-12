@@ -1,38 +1,46 @@
+"use client";
 import { useContent } from "@/hooks/useContent";
 import styles from "./Faqs.module.scss";
 import { icons } from "@/utils/icon";
 import Image from "next/image";
+import { App_Content_Faqs_QA } from "@/data/content";
+import { useState } from "react";
 export const Faqs = () => {
-   const { content } = useContent();
+   const { faqs } = useContent().content;
+   if (!faqs) return null;
    return (
-      <div className={`${styles.contentC}`}>
+      <div className={`${styles.contentC}`} id="faqs">
          <h2>FAQs</h2>
          <div className={`${styles.QAsC}`}>
-            {content.faqs?.qas.map((qa, index) => (
-               <div key={index} className={`${styles.groupQAs}`}>
-                  <div className={`${styles.titleC}`}>
-                     <h4>{qa.question}</h4>
-                     {qa.expandByDefault ? (
-                        <div className={`${styles.icon}`}>
-                           <Image alt={qa.question} src={icons.faqs.add} fill />
-                        </div>
-                     ) : (
-                        <div className={`${styles.icon}`}>
-                           <Image alt={qa.question} src={icons.faqs.remove} fill />
-                        </div>
-                     )}
-                  </div>
-                  <span>{qa.expandByDefault ? qa.answer : ""}</span>
-                  <hr />
-               </div>
+            {faqs.qas.map((qa, index) => (
+               <QA key={index} qa={qa} />
             ))}
-            <div className={`${styles.moreQAs}`}>
+            {/* <div className={`${styles.moreQAs}`}>
                <span>More questions</span>
                <div className={`${styles.more}`}>
                   <Image alt="more" src={icons.faqs.viewMore} fill />
                </div>
-            </div>
+            </div> */}
          </div>
+      </div>
+   );
+};
+const QA = ({ qa }: { qa: App_Content_Faqs_QA }) => {
+   const [isOpen, setIsOpen] = useState(qa.expandByDefault);
+   return (
+      <div className={`${styles.groupQAs}`}>
+         <div className={`${styles.question}`}>
+            <h4>{qa.question}</h4>
+            <button type="button" title="toggle" className={`${styles.icon}`} onClick={() => setIsOpen(!isOpen)}>
+               <Image alt={qa.question} src={icons.faqs[isOpen ? "remove" : "add"]} fill />
+            </button>
+         </div>
+         {isOpen && (
+            <div className={`${styles.answer}`}>
+               {Array.isArray(qa.answer) ? qa.answer.map((a, i) => <h4 key={i}>{a}</h4>) : <h4>{qa.answer}</h4>}
+            </div>
+         )}
+         <hr />
       </div>
    );
 };

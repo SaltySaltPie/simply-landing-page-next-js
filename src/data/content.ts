@@ -155,8 +155,9 @@ export type App_Content = {
       ratings: { bigIcon: string; smallIcon: string; link: string; title: string; agencyName: string }[];
    };
    business?: { title?: string; paragraphs: string[]; banner: string };
-   faqs?: { title?: string; qas: { question: string; answer: string | string[]; expandByDefault?: boolean }[] };
+   faqs?: { title?: string; qas: App_Content_Faqs_QA[] };
    properties?: { title?: string; locations: { photo: string; location: string }[] };
    process?: { title?: string; steps: { title: string; image: string }[] };
    about?: { title?: string; link: string };
 };
+export type App_Content_Faqs_QA = { question: string; answer: string | string[]; expandByDefault?: boolean };

@@ -56,6 +56,9 @@ button {
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
 }
+button {
+   cursor: pointer;
+}
 * {
    box-sizing: border-box;
    padding: 0;
