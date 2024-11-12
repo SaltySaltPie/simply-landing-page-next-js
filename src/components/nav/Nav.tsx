@@ -17,7 +17,9 @@ export const Nav = () => {
          <ul className={`${styles.navItems} ${showMobileNav && styles.showMobileNav}`}>
             {navItems.map((item) => (
                <li key={item.title}>
-                  <Link href={item.href}>{item.title}</Link>
+                  <Link href={item.href} onClick={() => setShowMobileNav(false)}>
+                     {item.title}
+                  </Link>
                </li>
             ))}
          </ul>
