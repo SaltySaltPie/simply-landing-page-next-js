@@ -1,7 +1,7 @@
 "use client";
 import { useContent } from "@/hooks/useContent";
 import styles from "./Properties.module.scss";
-import Carousel, { DotProps, ResponsiveType } from "react-multi-carousel";
+import { ResponsiveType } from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
@@ -61,5 +61,5 @@ const responsive: ResponsiveType = {
    5: {
       breakpoint: { max: 620, min: 0 },
       items: 1,
-   }
+   },
 };

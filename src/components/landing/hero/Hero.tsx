@@ -31,7 +31,14 @@ export const Hero = () => {
                <Image src={icons.header.hero.bigIcon["bbb"]} alt="" fill sizes="10vw" />
             </div>
          </div>
-         <CustomCarousel autoPlay infinite responsive={responsive} arrows className={`${styles.carousel}`}>
+         <CustomCarousel
+            arrows
+            infinite
+            autoPlay
+            responsive={responsive}
+            className={`${styles.carousel}`}
+            removeArrowOnDeviceType={["tablet", "mobile"]}
+         >
             {ratings.map(({ agencyName, bigIcon, link, smallIcon, title }, index) => (
                <div key={index} className={`${styles.rating}`}>
                   <div className={`${styles.top}`}>
