@@ -12,6 +12,8 @@
    --background: #f9f9f9;
    --base-white: #fff;
    --primary-500: #1a2d3d;
+   --primary-500-filter: brightness(0) saturate(100%) invert(11%) sepia(52%) saturate(674%) hue-rotate(165deg)
+      brightness(91%) contrast(87%);
    --Gray-500: #667085;
    --Primary-Sun: #ffe39b;
    --Terracotta-filter: brightness(0) saturate(100%) invert(56%) sepia(62%) saturate(449%) hue-rotate(330deg)
@@ -33,7 +35,6 @@ html,
 body {
    max-width: 100vw;
    overflow-x: hidden;
-   overflow: visible;
 }
 
 body {
