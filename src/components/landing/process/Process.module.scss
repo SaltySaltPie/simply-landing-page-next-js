@@ -25,3 +25,21 @@
       }
    }
 }
+
+@media (max-width: 1000px) {
+   .contentC {
+      > ul {
+         gap: 3rem;
+         > li {
+            width: 17.5rem;
+            > h3 {
+               text-align: center;
+               min-height: 4.2rem;
+            }
+            > div {
+               height: 11.6875rem;
+            }
+         }
+      }
+   }
+}
