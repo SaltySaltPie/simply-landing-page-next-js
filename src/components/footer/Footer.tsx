@@ -5,7 +5,7 @@ export const Footer = () => {
    return (
       <footer className={`${styles.contentC}`}>
          <div className={`${styles.logoC}`}>
-            <Image alt="logo" src={CF_CDN_URL("/assets/common/simply-logo.svg")} fill />
+            <Image alt="logo" src={CF_CDN_URL("/assets/common/simply-logo.svg")} fill sizes="10vw" />
          </div>
          <span>© 2024 Simply Homes. All rights reserved.</span>
       </footer>

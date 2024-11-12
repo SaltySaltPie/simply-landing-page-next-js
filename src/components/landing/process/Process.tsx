@@ -15,7 +15,7 @@ export const Process = () => {
                   <h3>{title}</h3>
                   {image && (
                      <div>
-                        <Image alt={title} src={image} fill />
+                        <Image alt={title} src={image} fill sizes="30vw" />
                      </div>
                   )}
                </li>

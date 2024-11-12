@@ -17,7 +17,7 @@ export const About = () => {
                </Link>
             </div>
             <div className={`${styles.banner}`}>
-               <Image alt="logo" src={CF_CDN_URL("/assets/about/banner.svg")} fill layout="raw" />
+               <Image alt="logo" src={CF_CDN_URL("/assets/about/banner.svg")} fill sizes="33vw"/>
             </div>
          </div>
       </div>

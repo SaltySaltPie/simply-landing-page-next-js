@@ -1,1 +1,7 @@
-.contentC {}
+.contentC {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 3rem;
+   padding: 8rem 0;
+}
