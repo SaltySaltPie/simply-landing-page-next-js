@@ -14,3 +14,20 @@
       color: var(--Gray-500, #667085);
    }
 }
+
+@media (max-width: 800px) {
+   .contentC {
+      padding: 2rem 1.5rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      gap: 1rem;
+      .logoC {
+         width: 5.4375rem;
+         height: 1.75rem;
+      }
+      > span {
+         font-size: 0.875rem;
+      }
+   }
+}
