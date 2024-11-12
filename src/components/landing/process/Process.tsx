@@ -7,7 +7,7 @@ export const Process = () => {
    if (!process) return null;
    const { steps, title } = process;
    return (
-      <div className={`${styles.contentC}`}>
+      <div className={`${styles.contentC}`} id="process">
          <h2 className={styles.title}>{title}</h2>
          <ul className={styles.steps}>
             {steps.map(({ title, image }) => (
