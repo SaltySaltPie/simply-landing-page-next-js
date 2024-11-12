@@ -31,7 +31,7 @@ export const icons = {
       },
    },
    business: {
-      soldSimply: CF_CDN_URL("/assets/business/soldsimply.png"),
+      soldSimply: CF_CDN_URL("/assets/business/sold_simply.png"),
    },
    faqs: {
       add: CF_CDN_URL("/assets/faqs/add_black.svg"),

@@ -1,21 +1,21 @@
 import { useContent } from "@/hooks/useContent";
 import styles from "./Business.module.scss";
+import { icons } from "@/utils/icon";
 export const Business = () => {
    const { content } = useContent();
 
    return (
       <div className={`${styles.contentC}`}>
-         <div>
-            <h4>{content.business?.title}</h4>
-            <div>
+         <div className={`${styles.leftC}`}>
+            <h2>{content.business?.title}</h2>
+            <div className={`${styles.paragraphsC}`}>
                {content.business?.paragraphs.map((p, i) => (
-                  <div key={i}>{p}</div>
+                  <span key={i}>{p}</span>
                ))}
             </div>
          </div>
-         <div>
-            {/* <img src={content.business?.banner} alt="" /> */}
-            {/* <Image src/> */}
+         <div className={`${styles.img}`}>
+            <img src={icons.business.soldSimply} alt="" />
          </div>
       </div>
    );
