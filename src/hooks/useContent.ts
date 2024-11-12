@@ -6,6 +6,6 @@ import { useSearchParams } from "next/navigation";
 export const useContent = () => {
    const searchParams = useSearchParams();
    const code = searchParams.get("code");
-   const content = app_content[code || "default"] || {};
+   const content = (code && app_content[code]) || app_content["default"];
    return { content };
 };
