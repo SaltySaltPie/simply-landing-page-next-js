@@ -8,7 +8,7 @@ export const app_content: Record<string, App_Content> = {
       },
 
       hero: {
-         title: `We’re buying houses for cash in [Market]`,
+         title: `We’re buying houses for cash in Pittsburgh and Cleveland`,
          subtitle: "Sell your home - the Simply way",
          ratings: [
             {
@@ -149,11 +149,7 @@ export type App_Content = {
       market: string;
       phone: string;
    };
-   hero: {
-      title: string;
-      subtitle: string;
-      ratings: { bigIcon: string; smallIcon: string; link: string; title: string; agencyName: string }[];
-   };
+   hero: { title: string; subtitle: string; ratings: App_Content_Hero_Rating[] };
    business?: { title?: string; paragraphs: string[]; banner: string };
    faqs?: { title?: string; qas: App_Content_Faqs_QA[] };
    properties?: { title?: string; locations: { photo: string; location: string }[] };
@@ -161,3 +157,10 @@ export type App_Content = {
    about?: { title?: string; link: string };
 };
 export type App_Content_Faqs_QA = { question: string; answer: string | string[]; expandByDefault?: boolean };
+export type App_Content_Hero_Rating = {
+   bigIcon: string;
+   smallIcon: string;
+   link: string;
+   title: string;
+   agencyName: string;
+};

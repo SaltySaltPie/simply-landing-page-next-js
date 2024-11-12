@@ -1,116 +1,104 @@
-.contentC {
-   // background-color: red;
+.heroC {
    width: 100%;
-   .heroC {
-      width: 100%;
-      background-size: cover;
-      min-height: 50rem;
-      max-height: 50.75rem;
-      background-image: url("https://dyaj6jwzih5dm.cloudfront.net/landing/assets/home_bg.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-      .title {
-         padding-top: 5rem;
+   padding: 0 8rem;
+   background-size: cover;
+   min-height: 50rem;
+   max-height: 50.75rem;
+   background-image: url("https://dyaj6jwzih5dm.cloudfront.net/landing/assets/home_bg.png");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   .title {
+      padding-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      gap: 1.5rem;
+      h3 {
+         text-align: center;
+         text-transform: uppercase;
+         font-weight: 200;
+      }
+      h1 {
+         text-align: center;
+         width: 43rem;
+         line-height: 3.5rem;
+      }
+      .searchC {
+         width: 40rem;
+         height: 3.5rem;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         padding: 0.7rem;
+         gap: 0.7rem;
+         border-radius: 0.7rem;
+         border: 1px solid var(--neutral-100, #e6e6e6);
+         background: var(--base-white, #fff);
+         text-align: center;
+         > input {
+            flex-grow: 1;
+         }
+         .searchIcon {
+            height: 2.5rem;
+            padding: 0.7rem 1rem;
+            border-radius: 0.5rem;
+            background: rgba(26, 45, 61, 0.12);
+            > img {
+               position: relative !important;
+               opacity: 0.38;
+               filter: brightness(0) saturate(100%) invert(14%) sepia(16%) saturate(1539%) hue-rotate(165deg)
+                  brightness(94%) contrast(93%);
+            }
+         }
+      }
+      .iconAgency {
+         width: 6.62225rem;
+         height: 3.5rem;
+         position: relative;
+      }
+   }
+   .carousel {
+      margin-top: 8rem;
+      .rating {
+         width: 20rem;
+         padding: 1rem;
          display: flex;
          flex-direction: column;
-         text-align: center;
-         align-items: center;
-         gap: 1.5rem;
-         h4 {
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 200;
-         }
-         h1 {
-            text-align: center;
-            width: 43rem;
-            line-height: 3.5rem;
-         }
-         .searchC {
-            width: 40rem;
-            height: 3.5rem;
+         gap: 0.5rem;
+         border-radius: 1rem;
+         border: 0.779px solid var(--neutral-100, #e6e6e6);
+         background-color: #fff;
+         box-shadow: 0px 6.229px 9.343px 0px rgba(0, 0, 0, 0.08);
+         .top {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 0.7rem;
-            gap: 0.7rem;
-            border-radius: 0.7rem;
-            border: 1px solid var(--neutral-100, #e6e6e6);
-            background: var(--base-white, #fff);
-            text-align: center;
-            > input {
-               flex-grow: 1;
-            }
-            .searchIcon {
+            .bigIcon {
                height: 2.5rem;
-               padding: 0.7rem 1rem;
-               border-radius: 0.5rem;
-               background: rgba(26, 45, 61, 0.12);
+               width: 6rem;
+               position: relative;
+            }
+            .linkIcon {
+               display: block;
+               position: relative;
+               height: 1.5rem;
+               width: 1.5rem;
                > img {
-                  position: relative !important;
-                  opacity: 0.38;
-                  filter: brightness(0) saturate(100%) invert(14%) sepia(16%) saturate(1539%) hue-rotate(165deg)
-                     brightness(94%) contrast(93%);
+                  filter: brightness(0) saturate(100%) invert(28%) sepia(85%) saturate(1601%) hue-rotate(214deg)
+                     brightness(99%) contrast(118%);
                }
             }
          }
-         .iconAgency {
-            width: 6.62225rem;
-            height: 2.5rem;
-            overflow: hidden;
-            > img {
-               position: relative !important;
-               width: 100%;
-               height: 100%;
+         .bot {
+            display: flex;
+            gap: 0.5rem;
+            .smallIcon {
+               width: 1.25rem;
+               height: 1.25rem;
+               position: relative;
             }
          }
       }
    }
-}
-// MyCarousel.module.scss
-
-.carouselContainer {
-   padding: 1rem;
-}
-
-.carouselItem {
-   padding: 0 0.5rem; // Adds space between items
-}
-
-.card {
-   background-color: #f5f5f5;
-   border-radius: 8px;
-   padding: 1rem;
-   text-align: center;
-   position: relative;
-   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-   transition: transform 0.3s ease;
-
-   &:hover {
-      transform: translateY(-5px);
-   }
-}
-
-.cardIcon {
-   margin-bottom: 1rem;
-}
-
-.cardTitle {
-   font-size: 1rem;
-   font-weight: bold;
-   color: #333;
-   margin-bottom: 0.5rem;
-}
-
-.cardDescription {
-   font-size: 0.9rem;
-   color: #666;
-   margin-bottom: 1rem;
-}
-
-.linkIcon {
-   position: absolute;
-   top: 0.5rem;
-   right: 0.5rem;
-   color: #0073e6;
 }

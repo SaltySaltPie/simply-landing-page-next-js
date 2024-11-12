@@ -10,24 +10,7 @@ export const Properties = () => {
    const { properties } = useContent().content;
    if (!properties) return null;
    const { title, locations } = properties;
-   const responsive: ResponsiveType = {
-      1: {
-         breakpoint: { max: 3000, min: 2300 },
-         items: 6,
-      },
-      2: {
-         breakpoint: { max: 2300, min: 2000 },
-         items: 5,
-      },
-      3: {
-         breakpoint: { max: 2000, min: 1600 },
-         items: 4,
-      },
-      4: {
-         breakpoint: { max: 1600, min: 0 },
-         items: 3,
-      },
-   };
+
    return (
       <div className={`${styles.contentC}`} id="properties">
          <h2>{title}</h2>
@@ -56,4 +39,23 @@ export const Properties = () => {
          </CustomCarousel>
       </div>
    );
+};
+
+const responsive: ResponsiveType = {
+   1: {
+      breakpoint: { max: 3000, min: 2300 },
+      items: 5,
+   },
+   2: {
+      breakpoint: { max: 2300, min: 2000 },
+      items: 4,
+   },
+   3: {
+      breakpoint: { max: 2000, min: 1600 },
+      items: 3,
+   },
+   4: {
+      breakpoint: { max: 1600, min: 0 },
+      items: 2,
+   },
 };

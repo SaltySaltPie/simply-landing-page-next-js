@@ -5,6 +5,10 @@ export const icons = {
       left_arrow: CF_CDN_URL("/assets/common/left-arrow.svg"),
       right_arrow: CF_CDN_URL("/assets/common/right-arrow.svg"),
    },
+   hero: {
+      banner: CF_CDN_URL("/assets/hero/hero-banner.png"),
+      link: CF_CDN_URL("/assets/hero/link_black.svg"),
+   },
    nav: {
       logo: CF_CDN_URL("/assets/common/simply-logo.svg"),
       phone: CF_CDN_URL("/assets/header/phone_black.svg"),

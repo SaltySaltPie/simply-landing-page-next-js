@@ -19,11 +19,15 @@ const CustomDot = ({ onClick, active }: DotProps) => (
 );
 const CustomRight = ({ onClick }: ArrowProps) => (
    <button className={`${styles.arrowBtn} ${styles.right}`} type="button" title="arrow" onClick={onClick}>
-      <Image alt="arrow" src={icons.common["right_arrow"]} fill sizes="10vw" />
+      <div>
+         <Image alt="arrow" src={icons.common["right_arrow"]} fill sizes="10vw" />
+      </div>
    </button>
 );
 const CustomLeft = ({ onClick }: ArrowProps) => (
    <button className={`${styles.arrowBtn} ${styles.left}`} type="button" title="arrow" onClick={onClick}>
-      <Image alt="arrow" src={icons.common["left_arrow"]} fill sizes="10vw" />
+      <div>
+         <Image alt="arrow" src={icons.common["left_arrow"]} fill sizes="10vw" />
+      </div>
    </button>
 );
