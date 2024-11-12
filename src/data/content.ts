@@ -10,7 +10,7 @@ export type App_Content = {
    hero: {
       title: string;
       subtitle: string;
-      ratings: { icon: string; link: string; title: string; agencyName: string }[];
+      ratings: { bigIcon: string; smallIcon: string; link: string; title: string; agencyName: string }[];
    };
    business?: { title?: string; paragraphs: string[]; banner: string };
    faqs?: { title?: string; qas: { question: string; answer: string; expandByDefault?: boolean }[] };
