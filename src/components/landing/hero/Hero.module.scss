@@ -22,11 +22,11 @@
       }
       h1 {
          text-align: center;
-         width: 43rem;
+         width: min(43rem, 90%);
          line-height: 3.5rem;
       }
       .searchC {
-         width: 40rem;
+         width: min(40rem, 80%);
          height: 3.5rem;
          display: flex;
          align-items: center;
@@ -61,8 +61,11 @@
    }
    .carousel {
       margin-top: 8rem;
+      display: flex;
       .rating {
-         width: 20rem;
+         // width: 20rem;
+         margin: 0 1rem;
+         min-height: 10rem;
          padding: 1rem;
          display: flex;
          flex-direction: column;
@@ -99,6 +102,23 @@
                position: relative;
             }
          }
+      }
+   }
+}
+@media (max-width: 950px) {
+   .heroC {
+      padding: 0 2rem;
+
+      .carousel {
+         margin-top: 4rem;
+      }
+   }
+}
+
+@media (max-width: 800px) {
+   .heroC {
+      .title {
+         gap: 0.75rem;
       }
    }
 }

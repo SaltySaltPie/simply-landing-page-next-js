@@ -71,11 +71,15 @@ const responsive: ResponsiveType = {
       items: 4,
    },
    4: {
-      breakpoint: { max: 1600, min: 0 },
+      breakpoint: { max: 1600, min: 1260 },
       items: 3,
    },
    5: {
-      breakpoint: { max: 1261, min: 0 },
+      breakpoint: { max: 1260, min: 800 },
       items: 2,
+   },
+   6: {
+      breakpoint: { max: 800, min: 0 },
+      items: 1,
    },
 };
