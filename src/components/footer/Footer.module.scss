@@ -1,1 +1,16 @@
-.contentC {}
+.contentC {
+   height: 8rem;
+   display: flex;
+   align-items: center;
+   padding: 0 8rem;
+   justify-content: space-between;
+   background: var(--base-white, #fff);
+   .logoC {
+      height: 2rem;
+      width: 6.125rem;
+      position: relative;
+   }
+   > span {
+      color: var(--Gray-500, #667085);
+   }
+}
