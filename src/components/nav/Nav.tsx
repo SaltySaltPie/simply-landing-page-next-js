@@ -2,6 +2,8 @@
 import { useContent } from "@/hooks/useContent";
 import styles from "./Nav.module.scss";
 import Link from "next/link";
+import Image from "next/image";
+import { icons } from "@/utils/icon";
 export const Nav = () => {
    const { navItems } = useNavItems();
    const { content } = useContent();
@@ -9,10 +11,7 @@ export const Nav = () => {
    return (
       <nav className={`${styles.contentC}`}>
          <div className={`${styles.logoC}`}>
-            <img
-               src="https://www.simplyhomes.com/hs-fs/hubfs/logo%20(1).png?width=333&height=118&name=logo%20(1).png"
-               alt=""
-            />
+            <Image src={icons.nav.logo.trimEnd()} alt="" width={24} height={24} />
          </div>
          <ul className={`${styles.navItems}`}>
             {navItems.map((item) => (
@@ -22,6 +21,10 @@ export const Nav = () => {
             ))}
          </ul>
          <div className={`${styles.phone}`}>
+            <div className={`${styles.phoneIcon}`}>
+               <Image src={icons.nav.phone.trimEnd()} alt="" width={24} height={24} />
+            </div>
+
             <Link href="tel:2073006144">{content.info.phone}</Link>
          </div>
          {/* <div className={`${styles.hamburger}`}></div> */}

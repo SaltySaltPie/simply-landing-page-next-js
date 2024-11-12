@@ -1,8 +1,8 @@
 import { CF_CDN_URL } from "@/utils/CF_CDN_URL";
 
 export const icons = {
-   logo: CF_CDN_URL("/assets/simply_logo.svg"),
    nav: {
+      logo: CF_CDN_URL("/assets/common/simply-logo.svg"),
       phone: CF_CDN_URL("/assets/header/phone_black.svg"),
       menu: CF_CDN_URL("/assets/header/menu_black.svg"),
       close: CF_CDN_URL("/assets/header/close_black.svg"),

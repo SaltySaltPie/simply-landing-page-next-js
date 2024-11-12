@@ -8,8 +8,8 @@ export const app_content: Record<string, App_Content> = {
       },
 
       hero: {
-         title: `We're buying houses for cash in [Market]`,
-         subtitle: "",
+         title: `We’re buying houses for cash in [Market]`,
+         subtitle: "Sell your home - the Simply way",
          ratings: [
             {
                smallIcon: icons.header.hero.smallIcon["bbb"],
