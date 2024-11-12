@@ -1,4 +1,6 @@
-export const app_content: Record<string, null> = {};
+export const app_content: Record<string, App_Content> = {
+   // default: {}
+};
 
 export type App_Content = {
    hero: {
