@@ -7,28 +7,30 @@ export const Faqs = () => {
    return (
       <div className={`${styles.contentC}`}>
          <h2>FAQs</h2>
-         {content.faqs?.qas.map((qa, index) => (
-            <div key={index} className={`${styles.groupQAs}`}>
-               <div className={`${styles.titleC}`}>
-                  <h4>{qa.question}</h4>
-                  {qa.expandByDefault ? (
-                     <div className={`${styles.icon}`}>
-                        <Image alt={qa.question} src={icons.faqs.add} fill />
-                     </div>
-                  ) : (
-                     <div className={`${styles.icon}`}>
-                        <Image alt={qa.question} src={icons.faqs.remove} fill />
-                     </div>
-                  )}
+         <div className={`${styles.QAsC}`}>
+            {content.faqs?.qas.map((qa, index) => (
+               <div key={index} className={`${styles.groupQAs}`}>
+                  <div className={`${styles.titleC}`}>
+                     <h4>{qa.question}</h4>
+                     {qa.expandByDefault ? (
+                        <div className={`${styles.icon}`}>
+                           <Image alt={qa.question} src={icons.faqs.add} fill />
+                        </div>
+                     ) : (
+                        <div className={`${styles.icon}`}>
+                           <Image alt={qa.question} src={icons.faqs.remove} fill />
+                        </div>
+                     )}
+                  </div>
+                  <span>{qa.expandByDefault ? qa.answer : ""}</span>
+                  <hr />
                </div>
-               <span>{qa.expandByDefault ? qa.answer : ""}</span>
-               <hr />
-            </div>
-         ))}
-         <div className={`${styles.moreQAs}`}>
-            <span>More questions</span>
-            <div className={`${styles.more}`}>
-               <Image alt="more" src={icons.faqs.viewMore} fill />
+            ))}
+            <div className={`${styles.moreQAs}`}>
+               <span>More questions</span>
+               <div className={`${styles.more}`}>
+                  <Image alt="more" src={icons.faqs.viewMore} fill />
+               </div>
             </div>
          </div>
       </div>
