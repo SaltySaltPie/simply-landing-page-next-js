@@ -3,6 +3,10 @@ export const app_content: Record<string, App_Content> = {
 };
 
 export type App_Content = {
+   info: {
+      market: string;
+      phone: string;
+   };
    hero: {
       title: string;
       subtitle: string;
