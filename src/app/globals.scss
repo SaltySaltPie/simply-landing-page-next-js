@@ -14,6 +14,8 @@
    --primary-500: #1a2d3d;
    --Gray-500: #667085;
    --Primary-Sun: #ffe39b;
+   --Terracotta-filter: brightness(0) saturate(100%) invert(56%) sepia(62%) saturate(449%) hue-rotate(330deg)
+      brightness(94%) contrast(87%);
 }
 
 // @media (prefers-color-scheme: dark) {
