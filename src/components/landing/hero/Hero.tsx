@@ -2,8 +2,8 @@
 
 import { useContent } from "@/hooks/useContent";
 import styles from "./Hero.module.scss";
+import { icons } from "@/utils/icon";
 
-import { icons } from "@/data/icon";
 export const Hero = () => {
    const { content } = useContent();
 
