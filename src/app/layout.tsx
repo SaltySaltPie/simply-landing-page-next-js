@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import { Nav } from "@/components/nav/Nav";
+import { Footer } from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
    title: "Simply Homes",
@@ -18,6 +19,7 @@ export default function RootLayout({
          <body>
             <Nav />
             {children}
+            <Footer />
          </body>
       </html>
    );
