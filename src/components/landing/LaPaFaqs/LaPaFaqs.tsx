@@ -1,11 +1,11 @@
 "use client";
 import { useContent } from "@/hooks/useContent";
-import styles from "./Faqs.module.scss";
+import styles from "./LaPaFaqs.module.scss";
 import { icons } from "@/utils/icon";
 import Image from "next/image";
 import { App_Content_Faqs_QA } from "@/data/content";
 import { useState } from "react";
-export const Faqs = () => {
+export const LaPaFaqs = () => {
    const { faqs } = useContent().content;
    if (!faqs) return null;
    return (

@@ -1,9 +1,9 @@
 import { useContent } from "@/hooks/useContent";
-import styles from "./Business.module.scss";
+import styles from "./LaPaBusiness.module.scss";
 import { icons } from "@/utils/icon";
 import Image from "next/image";
 
-export const Business = () => {
+export const LaPaBusiness = () => {
    const { content } = useContent();
 
    return (
@@ -22,5 +22,3 @@ export const Business = () => {
       </div>
    );
 };
-
-// type TBusinessProps = {};

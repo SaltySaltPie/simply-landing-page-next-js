@@ -1,9 +1,9 @@
 import { useContent } from "@/hooks/useContent";
-import styles from "./About.module.scss";
+import styles from "./LaPaAbout.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { CF_CDN_URL } from "@/utils/CF_CDN_URL";
-export const About = () => {
+export const LaPaAbout = () => {
    const { content } = useContent();
    const { about } = content;
    if (!about) return null;

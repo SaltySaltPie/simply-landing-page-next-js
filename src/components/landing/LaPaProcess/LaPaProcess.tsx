@@ -1,7 +1,7 @@
 import { useContent } from "@/hooks/useContent";
-import styles from "./Process.module.scss";
+import styles from "./LaPaProcess.module.scss";
 import Image from "next/image";
-export const Process = () => {
+export const LaPaProcess = () => {
    const { content } = useContent();
    const { process } = content;
    if (!process) return null;

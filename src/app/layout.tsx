@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import { Nav } from "@/components/nav/Nav";
 import { Footer } from "@/components/footer/Footer";
 import { Suspense } from "react";
+import { LapaAndWeNav } from "@/components/LapaAndWeNav/LapaAndWeNav";
 
 export const metadata: Metadata = {
    title: "Simply Homes",
@@ -22,7 +22,7 @@ export default function RootLayout({
          </head>
          <body>
             <Suspense>
-               <Nav />
+               {process.env.MODE === "landing" || process.env.MODE === "we" ? <LapaAndWeNav /> : <></>}
                {children}
                <Footer />
             </Suspense>

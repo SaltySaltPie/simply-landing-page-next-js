@@ -1,14 +1,14 @@
 "use client";
 
 import { useContent } from "@/hooks/useContent";
-import styles from "./Hero.module.scss";
+import styles from "./LaPaHero.module.scss";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
 import { CustomCarousel } from "@/components/common/customCarousel/CustomCarousel";
 import { ResponsiveType } from "react-multi-carousel";
 import Link from "next/link";
 
-export const Hero = () => {
+export const LaPaHero = () => {
    const { content } = useContent();
 
    const { hero } = content;

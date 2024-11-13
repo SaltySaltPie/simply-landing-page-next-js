@@ -1,12 +1,12 @@
 "use client";
 import { useContent } from "@/hooks/useContent";
-import styles from "./Properties.module.scss";
+import styles from "./LaPaProperties.module.scss";
 import { ResponsiveType } from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
 import { CustomCarousel } from "@/components/common/customCarousel/CustomCarousel";
-export const Properties = () => {
+export const LaPaProperties = () => {
    const { properties } = useContent().content;
    if (!properties) return null;
    const { title, locations } = properties;
