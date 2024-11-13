@@ -1,12 +1,12 @@
 "use client";
 import { useContent } from "@/hooks/useContent";
-import styles from "./LapaAndWeNav.module.scss";
+import styles from "./LaPaAndWeNav.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
 import { useState } from "react";
 
-export const LapaAndWeNav = () => {
+export const LaPaAndWeNav = () => {
    const { navItems } = useNavItems();
    const { content } = useContent();
    const [showMobileNav, setShowMobileNav] = useState(false);
