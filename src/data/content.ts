@@ -1,7 +1,7 @@
 import { icons } from "@/utils/icon";
 
 export const app_content: Record<string, App_Content> = {
-   landing: {
+   default: {
       info: {
          market: "",
          phone: "(207) 300-6144",
