@@ -6,6 +6,7 @@ import { useSearchParams } from "next/navigation";
 export const useContent = () => {
    const searchParams = useSearchParams();
    const code = searchParams.get("code");
-   const content = (code && app_content[code]) || app_content["default"];
+   const mode = process.env.MODE || "landing";
+   const content = (code && app_content[code]) || app_content[mode];
    return { content };
 };
