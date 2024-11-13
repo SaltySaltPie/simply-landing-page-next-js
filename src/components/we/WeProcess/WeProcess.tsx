@@ -9,18 +9,27 @@ export const WeProcess = () => {
    return (
       <div className={`${styles.contentC}`} id="process">
          <h2 className={styles.title}>{title}</h2>
-         <ul className={styles.steps}>
+         <div className={styles.processC}>
+            {steps.map(({ title, image }) => (
+               <div key={title} className={styles.steps}>
+                  <div></div>
+                  <span>{title}</span>
+               </div>
+            ))}
+         </div>
+
+         {/* <ul className={styles.steps}>
             {steps.map(({ title, image }) => (
                <li key={title} className={styles.step}>
                   <h3>{title}</h3>
-                  {/* {image && (
+                  {image && (
                      <div>
                         <Image alt={title} src={image} fill sizes="30vw" />
                      </div>
-                  )} */}
+                  )}
                </li>
             ))}
-         </ul>
+         </ul> */}
       </div>
    );
 };
