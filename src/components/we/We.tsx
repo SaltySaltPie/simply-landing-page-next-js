@@ -1,21 +1,26 @@
 "use client";
-import { WeBusiness } from "@/components/we/WeBusiness/WeBusiness";
+// import { WeBusiness } from "@/components/we/WeBusiness/WeBusiness";
 import styles from "./We.module.scss";
 import { WeHero } from "./WeHero/WeHero";
 import { useContent } from "@/hooks/useContent";
-import { WeFaqs } from "@/components/we/WeFaqs/WeFaqs";
 import { WeProcess } from "@/components/we/WeProcess/WeProcess";
+import { LaPaBusiness } from "@/components/landing/LaPaBusiness/LaPaBusiness";
+import { LaPaAbout } from "@/components/landing/LaPaAbout/LaPaAbout";
+import { LaPaProperties } from "@/components/landing/LaPaProperties/LaPaProperties";
+import { LaPaFaqs } from "@/components/landing/LaPaFaqs/LaPaFaqs";
+import { WeCTA } from "@/components/we/WeCTA/WeCTA";
 export const We = () => {
    const { content } = useContent();
 
    return (
       <div className={`${styles.contentC}`}>
          <WeHero />
-         {content["business"] && <WeBusiness />}
-         {content["faqs"] && <WeFaqs />}
-         {/* {content["properties"] && <WeProperties />} */}
+         {content["business"] && <LaPaBusiness />}
+         {content["faqs"] && <LaPaFaqs />}
+         {content["properties"] && <LaPaProperties />}
          {content["process"] && <WeProcess />}
-         {/* {content["about"] && <WeAbout />} */}
+         {content["about"] && <WeCTA />}
+         {content["about"] && <LaPaAbout />}
       </div>
    );
 };

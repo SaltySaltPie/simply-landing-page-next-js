@@ -1,6 +1,8 @@
 .contentC {
    display: flex;
+   justify-content: space-between;
    .leftC {
+      max-width: 70rem;
       flex-grow: 1;
       display: flex;
       justify-content: center;
