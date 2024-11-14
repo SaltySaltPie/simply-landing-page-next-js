@@ -1,4 +1,5 @@
 import { CF_CDN_URL } from "@/utils/CF_CDN_URL";
+import { CF_CDN_URL_WE } from "./CF_CDN_URL_WE";
 
 export const icons = {
    common: {
@@ -58,5 +59,19 @@ export const icons = {
       process3: CF_CDN_URL("/assets/process/process3.png"),
       process4: CF_CDN_URL("/assets/process/process4.png"),
       process5: CF_CDN_URL("/assets/process/process5.png"),
+   },
+};
+
+export const icons_we = {
+   hero: {
+      banner: CF_CDN_URL_WE("/hero/hero_bg.png"),
+   },
+   CTA: {
+      cta_bg: CF_CDN_URL_WE("/CTA/cta_bg.png"),
+   },
+   process: {
+      process_bg: CF_CDN_URL_WE("/process/process_man_bg.png"),
+      play_arrow: CF_CDN_URL_WE("/process/play_arrow_black.svg"),
+      play_arrow_outline_black: CF_CDN_URL_WE("/process/play_arrow_outline_black.svg"),
    },
 };
