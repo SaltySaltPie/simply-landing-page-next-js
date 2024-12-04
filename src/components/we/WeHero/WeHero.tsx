@@ -27,9 +27,6 @@ export const WeHero = () => {
                <Image src={icons.header.hero.bigIcon["bbb"]} alt="" fill sizes="10vw" />
             </div>
          </div>
-         {/* <div className={`${styles.backgroundImg}`}>
-            <Image src={icons_we.hero.banner.trimEnd()} alt="" width={200} height={200} />
-         </div> */}
       </div>
    );
 };
