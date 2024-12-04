@@ -11,7 +11,7 @@ export const WeProcess = () => {
    const { steps, title } = process;
    return (
       <div className={`${styles.contentC}`} id="process">
-         <h2 className={styles.title}>{title}</h2>
+         <h2 className={styles.title}>How does this process work?</h2>
          <div className={styles.processC}>
             <div className={styles.process}>
                {steps.map(({ title, image }, i) => (

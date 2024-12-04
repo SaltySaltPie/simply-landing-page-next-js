@@ -2,14 +2,13 @@
    width: 100%;
    margin-top: 4rem;
    padding: 0 8rem;
-   background-size: cover;
    min-height: 50rem;
    max-height: 50.75rem;
    // background-image: url("https://dyaj6jwzih5dm.cloudfront.net/landing/assets/home_bg.png");
-   background: var(--Primary-Sun, #FFE39B);
+   background: var(--Primary-Sun, #ffe39b);
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: bottom;
+   background-position: center 20rem;
    .title {
       padding-top: 5rem;
       display: flex;
@@ -64,7 +63,11 @@
 }
 @media (max-width: 950px) {
    .heroC {
+      min-height: 65rem;
+
       padding: 0 2rem;
+      background-size: auto 40.875rem;
+      background-position: center 25rem;
 
       .carousel {
          margin-top: 4rem;
@@ -74,6 +77,10 @@
 
 @media (max-width: 800px) {
    .heroC {
+      min-height: 50rem ;
+      background-size: auto 20.375rem;
+      background-position: center 30rem;
+
       .title {
          gap: 0.75rem;
       }

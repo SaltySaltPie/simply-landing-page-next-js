@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useContent } from "@/hooks/useContent";
 import styles from "./WeHero.module.scss";
-import { icons } from "@/utils/icon";
+import { icons, icons_we } from "@/utils/icon";
 
 export const WeHero = () => {
    const { content } = useContent();
@@ -13,7 +13,7 @@ export const WeHero = () => {
    if (!hero) return null;
    const { subtitle, title } = hero;
    return (
-      <div className={`${styles.heroC}`}>
+      <div className={`${styles.heroC}`} style={{ backgroundImage: `url(${icons_we.hero.banner})` }}>
          <div className={`${styles.title}`}>
             <h3>{subtitle}</h3>
             <h1>{title}</h1>
@@ -27,6 +27,9 @@ export const WeHero = () => {
                <Image src={icons.header.hero.bigIcon["bbb"]} alt="" fill sizes="10vw" />
             </div>
          </div>
+         {/* <div className={`${styles.backgroundImg}`}>
+            <Image src={icons_we.hero.banner.trimEnd()} alt="" width={200} height={200} />
+         </div> */}
       </div>
    );
 };
