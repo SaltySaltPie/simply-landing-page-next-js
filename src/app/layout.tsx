@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.scss";
 import { Footer } from "@/components/footer/Footer";
 import { Suspense } from "react";
-import { LaPaAndWeNav } from "@/components/LapaAndWeNav/LapaAndWeNav";
+import { LaPaAndWeNav } from "@/components/Lp&WeNav/Lp&WeNav";
 
 export const metadata: Metadata = {
    title: "Simply Homes",

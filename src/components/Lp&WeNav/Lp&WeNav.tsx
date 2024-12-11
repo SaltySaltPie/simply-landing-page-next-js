@@ -1,6 +1,6 @@
 "use client";
 import { useContent } from "@/hooks/useContent";
-import styles from "./LaPaAndWeNav.module.scss";
+import styles from "./Lp&WeNav.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
