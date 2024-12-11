@@ -23,7 +23,9 @@ export default function RootLayout({
          </head>
          <body>
             <Suspense>
-               {process.env.MODE === "landing" ? <LaPaNav /> : <WeNav />}
+               {process.env.MODE === "landing" && <LaPaNav />}
+               {process.env.MODE === "we" && <WeNav />}
+               {process.env.MODE === "renovate" && <WeNav />}
                {children}
                <Footer />
             </Suspense>

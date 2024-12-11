@@ -47,8 +47,7 @@ const useNavItems = () => {
    const navItems: { title: string; href: string }[] = [{ title: "Home", href: "/" }];
    if (content["business"]) navItems.push({ title: "We Buy", href: "#business" });
    if (content["faqs"]) navItems.push({ title: "We Rent", href: "#faqs" });
-   if (content["properties"]) navItems.push({ title: "We Ronovate", href: "#properties" });
-   // if (content["process"]) navItems.push({ title: "Our Process", href: "#process" });
+   if (content["properties"]) navItems.push({ title: "We Renovate", href: "/renovate" });
    if (content["about"]) navItems.push({ title: "About", href: content["about"].link });
    return { navItems };
 };
