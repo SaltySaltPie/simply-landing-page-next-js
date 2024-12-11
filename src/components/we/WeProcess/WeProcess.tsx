@@ -27,13 +27,12 @@ export const WeProcess = () => {
                            width={24}
                            height={24}
                         />
-
                         <span>{title}</span>
                      </div>
                      <div key={i} className={`${styles.description} ${show === i && styles.active}`}>
                         <span>{title}</span>
                         <div className={styles.stepsImg}>
-                           {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} />}
+                           {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
                         </div>
                      </div>
                   </div>
@@ -48,7 +47,7 @@ export const WeProcess = () => {
                   >
                      <span>{title}</span>
                      <div className={styles.stepsImg}>
-                        {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} />}
+                        {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
                      </div>
                   </div>
                ))}

@@ -1,7 +1,7 @@
 .contentC {
    padding: 5rem 8rem;
    .content {
-      height: 35rem;
+      height: 45rem;
       border-radius: 1.5rem;
       background: var(--Secondary-Mint, #d2f9e1);
       display: flex;
@@ -10,6 +10,7 @@
       gap: 1.5rem;
       background-size: cover;
       background-repeat: no-repeat;
+      background-position: bottom;
       .titleC {
          padding-top: 3rem;
          > h2 {
