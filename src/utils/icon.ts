@@ -73,5 +73,10 @@ export const icons_we = {
       process_bg: CF_CDN_URL_WE("/process/process_man_bg.png"),
       play_arrow: CF_CDN_URL_WE("/process/play_arrow_black.svg"),
       play_arrow_outline_black: CF_CDN_URL_WE("/process/play_arrow_outline_black.svg"),
+      process1: CF_CDN_URL_WE("/process/process1.png"),
+      process2: CF_CDN_URL_WE("/process/process2.png"),
+      process3: CF_CDN_URL_WE("/process/process3.png"),
+      process4: CF_CDN_URL_WE("/process/process4.png"),
+      process5: CF_CDN_URL_WE("/process/process5.png"),
    },
 };
