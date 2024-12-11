@@ -1,5 +1,5 @@
 "use client";
-import { LaPaAbout } from "../landing/LaPaAbout/LaPaAbout";
+import { LaPaAbout } from "@/components/landing/LaPaAbout/LaPaAbout";
 import styles from "./WeReno.module.scss";
 import { WeRenoAffordability } from "./WeRenoAffordability/WeRenoAffordability";
 import { WeRenoCommunityDriven } from "./WeRenoCommunityDriven/WeRenoCommunityDriven";

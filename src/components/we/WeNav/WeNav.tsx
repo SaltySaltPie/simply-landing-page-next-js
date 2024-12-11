@@ -42,12 +42,24 @@ export const WeNav = () => {
 };
 
 const useNavItems = () => {
-   const { content } = useContent();
-
-   const navItems: { title: string; href: string }[] = [{ title: "Home", href: "/" }];
-   if (content["business"]) navItems.push({ title: "We Buy", href: "#business" });
-   if (content["faqs"]) navItems.push({ title: "We Rent", href: "#faqs" });
-   if (content["properties"]) navItems.push({ title: "We Renovate", href: "/renovate" });
-   if (content["about"]) navItems.push({ title: "About", href: content["about"].link });
+   const navItems: { title: string; href: string }[] = [
+      { title: "Home", href: "/" },
+      {
+         title: "We Buy",
+         href: "/we-buy",
+      },
+      {
+         title: "We Rent",
+         href: "/we-rent",
+      },
+      {
+         title: "We Renovate",
+         href: "/we-renovate",
+      },
+      {
+         title: "About Us",
+         href: "#about-us",
+      },
+   ];
    return { navItems };
 };
