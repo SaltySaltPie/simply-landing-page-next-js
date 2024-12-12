@@ -89,7 +89,7 @@ export const icons_we_renovate = {
    },
    question: CF_CDN_URL_WE_RENOVATE("/question/question.svg"),
    why: {
-      banner: CF_CDN_URL_WE_RENOVATE("/why/why.png"),
+      banner: CF_CDN_URL_WE_RENOVATE("/why/why_bg.png"),
       more: CF_CDN_URL_WE_RENOVATE("/why/keyboard_double_arrow_down.svg"),
       less: CF_CDN_URL_WE_RENOVATE("/why/keyboard_double_arrow_up.svg"),
    },
