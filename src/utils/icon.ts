@@ -88,7 +88,7 @@ export const icons_we_renovate = {
       banner: CF_CDN_URL_WE_RENOVATE("/hero/hero.png"),
    },
    why: {
-      why: CF_CDN_URL_WE_RENOVATE("/why/why.png"),
+      banner: CF_CDN_URL_WE_RENOVATE("/why/why.png"),
    },
    high: {
       high1: CF_CDN_URL_WE_RENOVATE("/high-standard/high1.png"),
@@ -114,6 +114,6 @@ export const icons_we_rent = {
       who: CF_CDN_URL_WE_RENT("/who.png"),
    },
    why: {
-      why: CF_CDN_URL_WE_RENT("/why.png"),
+      banner: CF_CDN_URL_WE_RENT("/why.png"),
    },
 };

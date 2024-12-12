@@ -43,7 +43,7 @@ export const WeProcess = () => {
                   <div
                      key={i}
                      // onClick={() => setShow(i)}
-                     className={`${styles.description} ${show === i && styles.active}`}
+                     className={`${styles.description} ${show === i ? styles.active : ""}`}
                   >
                      <span>{content}</span>
                      <div className={styles.stepsImg}>

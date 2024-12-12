@@ -1,0 +1,13 @@
+.contentC{
+    background-color: var(--Secondary-Mint, #D2F9E1);
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    > h1{
+        text-align: center;
+    }
+    > p{
+        text-align: center;
+    }
+}
