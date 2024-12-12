@@ -1,5 +1,7 @@
 import { CF_CDN_URL } from "@/utils/CF_CDN_URL";
 import { CF_CDN_URL_WE } from "./CF_CDN_URL_WE";
+import { CF_CDN_URL_WE_RENOVATE } from "./CF_CND_WE_RENOVATE";
+import { CF_CDN_URL_WE_RENT } from "./CF_CND_WE_RENT";
 
 export const icons = {
    common: {
@@ -78,5 +80,40 @@ export const icons_we = {
       process3: CF_CDN_URL_WE("/process/process3.png"),
       process4: CF_CDN_URL_WE("/process/process4.png"),
       process5: CF_CDN_URL_WE("/process/process5.png"),
+   },
+};
+
+export const icons_we_renovate = {
+   hero: {
+      banner: CF_CDN_URL_WE_RENOVATE("/hero/hero.png"),
+   },
+   why: {
+      why: CF_CDN_URL_WE_RENOVATE("/why/why.png"),
+   },
+   high: {
+      high1: CF_CDN_URL_WE_RENOVATE("/high-standard/high1.png"),
+      high2: CF_CDN_URL_WE_RENOVATE("/high-standard/high2.png"),
+      high3: CF_CDN_URL_WE_RENOVATE("/high-standard/high3.png"),
+   },
+   affordability: {
+      affordability1: CF_CDN_URL_WE_RENOVATE("/affordability/affordability1.png"),
+      affordability2: CF_CDN_URL_WE_RENOVATE("/affordability/affordability2.png"),
+      affordability3: CF_CDN_URL_WE_RENOVATE("/affordability/affordability3.png"),
+   },
+   community: {
+      community1: CF_CDN_URL_WE_RENOVATE("/community-driven/community1.png"),
+      community2: CF_CDN_URL_WE_RENOVATE("/community-driven/community2.png"),
+   },
+};
+
+export const icons_we_rent = {
+   hero: {
+      banner: CF_CDN_URL_WE_RENT("/hero.png"),
+   },
+   who: {
+      who: CF_CDN_URL_WE_RENT("/who.png"),
+   },
+   why: {
+      why: CF_CDN_URL_WE_RENT("/why.png"),
    },
 };
