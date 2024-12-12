@@ -87,8 +87,11 @@ export const icons_we_renovate = {
    hero: {
       banner: CF_CDN_URL_WE_RENOVATE("/hero/hero.png"),
    },
+   question: CF_CDN_URL_WE_RENOVATE("/question/question.svg"),
    why: {
       banner: CF_CDN_URL_WE_RENOVATE("/why/why.png"),
+      more: CF_CDN_URL_WE_RENOVATE("/why/keyboard_double_arrow_down.svg"),
+      less: CF_CDN_URL_WE_RENOVATE("/why/keyboard_double_arrow_up.svg"),
    },
    high: {
       high1: CF_CDN_URL_WE_RENOVATE("/high-standard/high1.png"),
@@ -103,6 +106,10 @@ export const icons_we_renovate = {
    community: {
       community1: CF_CDN_URL_WE_RENOVATE("/community-driven/community1.png"),
       community2: CF_CDN_URL_WE_RENOVATE("/community-driven/community2.png"),
+   },
+   expand: {
+      less: CF_CDN_URL_WE_RENOVATE("/expand_less.svg"),
+      more: CF_CDN_URL_WE_RENOVATE("/expand_more.svg"),
    },
 };
 
