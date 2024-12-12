@@ -7,7 +7,10 @@ export const WeRenoWhy = () => {
    const [expand, setExpand] = useState(false);
    return (
       <div className={`${styles.contentC}`}>
-         <div className={`${styles.banner}`} style={{ backgroundImage: `url(${icons_we_renovate.why.banner})` }}>
+         <div
+            className={`${styles.banner} ${expand && styles.active}`}
+            style={{ backgroundImage: `url(${icons_we_renovate.why.banner})` }}
+         >
             {/* <Image src={icons_we_renovate.hero.banner.trimEnd()} alt="" width={400} height={400} /> */}
          </div>
          <div className={`${styles.content}`}>

@@ -12,11 +12,15 @@
       gap: 1.5rem;
    }
    .banner {
-      width: 45rem;
+      width: 50%;
       height: 35rem;
       background-position: top left;
       background-repeat: no-repeat;
       background-size: cover;
+      &.active {
+      height: 45rem;
+      background-position: top center;
+      }
    }
 }
 @media (max-width: 1540px) {
