@@ -1,9 +1,15 @@
 "use client";
+import { icons_we_renovate } from "@/utils/icon";
 import styles from "./WeRenoValueEngineer.module.scss";
+
+import Image from "next/image";
+
 export const WeRenoValueEngineer = () => {
    return (
       <div className={`${styles.contentC}`}>
-         <div></div>
+         <div>
+            <Image alt="" src={icons_we_renovate.question.trimEnd()} width={300} height={200} quality={100} />
+         </div>
          <h1>What is Value-Engineered Renovation?</h1>
          <p>
             Value-Engineered Renovation is a proprietary approach to property improvement that prioritizes both

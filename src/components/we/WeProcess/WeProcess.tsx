@@ -10,7 +10,7 @@ export const WeProcess = () => {
    if (!process) return null;
    // const { steps, title } = process;
    return (
-      <div className={`${styles.contentC}`} id="process">
+      <div className={`${styles.contentC}`}>
          <h2 className={styles.title}>How does this process work?</h2>
          <div className={styles.processC}>
             <div className={styles.process}>
