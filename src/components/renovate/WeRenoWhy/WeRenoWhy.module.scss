@@ -10,26 +10,39 @@
       flex-direction: column;
       justify-content: center;
       gap: 1.5rem;
+      .expand {
+         font-size: 18px;
+         color: var(--info-500, #295BFF);
+         display: flex;
+         gap: 0.25rem;
+         > img {
+            filter: brightness(0) saturate(100%) invert(36%) sepia(99%) saturate(4443%) hue-rotate(222deg) brightness(99%) contrast(105%);
+         }
+      }
    }
    .banner {
       width: 50%;
-      height: 35rem;
-      background-position: top left;
-      background-repeat: no-repeat;
-      background-size: cover;
-      &.active {
       height: 45rem;
-      background-position: top center;
+      background-position: bottom left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      &.active {
+         height: 50rem;
+         // background-position: top right;
       }
    }
 }
-@media (max-width: 1540px) {
+@media (max-width: 2050px) {
    .contentC {
       .content {
-         padding-left: 2rem;
+         justify-content: start;
+         padding-top: 4rem;
       }
       .banner {
-         height: 45rem;
+         height: 30rem;
+         &.active {
+            height: 35rem;
+         }
       }
    }
 }
@@ -37,14 +50,19 @@
    .contentC {
       gap: 1rem;
       .content {
-         justify-content: start;
-         padding-top: 6rem;
+        
          > h1 {
             font-size: 40px;
          }
       }
       .banner {
-         height: 35rem;
+         background-position: top right;
+
+         background-size: cover;
+         &.active {
+         height: 40rem;
+
+         }
       }
    }
 }
@@ -52,7 +70,7 @@
    .contentC {
       flex-direction: column;
       gap: 5rem;
-
+      padding: 5rem 0;
       .content {
          order: 2;
          width: 100%;
@@ -63,12 +81,15 @@
          width: 100%;
          height: 45rem;
          background-size: contain;
+         &.active{
+            height: 45rem;
+         }
       }
    }
 }
 @media (max-width: 775px) {
    .contentC {
-    gap: 1.5rem;
+      gap: 1.5rem;
       .content {
          padding: 0 5rem;
          > h1 {
@@ -77,6 +98,9 @@
       }
       .banner {
          height: 30rem;
+         &.active{
+            height: 30rem;
+         }
       }
    }
 }
@@ -87,6 +111,9 @@
       }
       .banner {
          height: 20rem;
+         &.active{
+            height: 20rem;
+         }
       }
    }
 }

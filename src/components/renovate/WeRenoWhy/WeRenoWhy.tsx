@@ -35,7 +35,10 @@ export const WeRenoWhy = () => {
                   </p>
                </>
             )}
-            <div onClick={() => setExpand(!expand)}>{expand ? "Read Less" : "Read More"}</div>
+            <div className={`${styles.expand}`} onClick={() => setExpand(!expand)}>
+               {expand ? "Read Less" : "Read More"}
+               <img src={expand ? icons_we_renovate.why.less : icons_we_renovate.why.more} alt="" />
+            </div>
          </div>
       </div>
    );
