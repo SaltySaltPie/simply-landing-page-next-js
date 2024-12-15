@@ -119,8 +119,22 @@ export const icons_we_rent = {
    },
    who: {
       who: CF_CDN_URL_WE_RENT("/who.png"),
+      more: CF_CDN_URL_WE_RENOVATE("/keyboard_double_arrow_down.svg"),
+      less: CF_CDN_URL_WE_RENOVATE("/keyboard_double_arrow_up.svg"),
    },
    why: {
-      banner: CF_CDN_URL_WE_RENT("/why.png"),
+      why1: CF_CDN_URL_WE_RENT("/why1.png"),
+      why2: CF_CDN_URL_WE_RENT("/why2.png"),
+      why3: CF_CDN_URL_WE_RENT("/why3.png"),
+      why4: CF_CDN_URL_WE_RENT("/why4.png"),
+   },
+   map: {
+      Pittsburgh: CF_CDN_URL_WE_RENT("/Pittsburgh.png"),
+      Cleveland: CF_CDN_URL_WE_RENT("/Cleveland.png"),
+      Indianapolis: CF_CDN_URL_WE_RENT("/Indianapolis.png"),
+   },
+   expand: {
+      less: CF_CDN_URL_WE_RENOVATE("/expand_less.svg"),
+      more: CF_CDN_URL_WE_RENOVATE("/expand_more.svg"),
    },
 };
