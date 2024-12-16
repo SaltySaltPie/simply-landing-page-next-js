@@ -11,7 +11,7 @@
       justify-content: center;
       gap: 1.5rem;
       .expand {
-         font-size: 18px;
+         font-size: 16px;
          color: var(--info-500, #295BFF);
          display: flex;
          gap: 0.25rem;
@@ -50,6 +50,7 @@
    .contentC {
       gap: 1rem;
       .content {
+      padding-right: 4rem;
         
          > h1 {
             font-size: 40px;
