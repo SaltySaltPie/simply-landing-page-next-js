@@ -1,5 +1,5 @@
-import { We } from "@/components/we/We";
+import { WeBuy } from "@/components/buy/WeBuy";
 
 export default function WeBuyPage() {
-   return <We />;
+   return <WeBuy />;
 }
