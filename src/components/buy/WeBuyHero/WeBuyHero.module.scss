@@ -1,0 +1,200 @@
+.contentC {
+   .heading {
+      border-radius: 0rem 0rem 5rem 5rem;
+      background: var(--Primary-Sun, #ffe39b);
+      height: 45rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      //   justify-content: center;
+      .content {
+         width: 50%;
+         padding: 0 1.5rem 0 8rem;
+         .description {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+         }
+         .searchBox {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            width: 30rem;
+            height: 3.5rem;
+            padding: 0.75rem;
+            align-items: center;
+            gap: 0.75rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--neutral-100, #e6e6e6);
+            background: var(--base-white, #fff);
+            > input {
+               flex-grow: 1;
+               height: 100%;
+               border: none;
+               outline: none;
+               background: transparent;
+               color: var(--neutral-900, #333);
+            }
+            .searchBtn {
+               height: 2.5rem;
+               padding: 0.7rem 1rem;
+               border-radius: 0.5rem;
+               background: rgba(26, 45, 61, 0.12);
+               > img {
+                  opacity: 0.38;
+                  filter: brightness(0) saturate(100%) invert(14%) sepia(16%) saturate(1539%) hue-rotate(165deg)
+                     brightness(94%) contrast(93%);
+               }
+            }
+         }
+         .discover {
+            font-style: italic;
+         }
+      }
+      .background {
+         flex: 1 0 0;
+         height: 100%;
+         background-repeat: no-repeat;
+         background-position: center right;
+      }
+   }
+   .itemC {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      height: 10rem;
+
+      .item {
+         margin-top: -7rem;
+         display: flex;
+         width: 13.5rem;
+         padding: 1rem;
+         flex-direction: column;
+         align-items: center;
+         gap: 0.5rem;
+         border-radius: 1rem;
+         border: 1px solid var(--neutral-100, #e6e6e6);
+         background: var(--base-white, #fff);
+         box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+      }
+   }
+   .desC {
+      padding: 3rem 8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      .des {
+         display: flex;
+         > h2 {
+            flex: 1 0 0;
+         }
+         > span {
+            flex: 1 0 0;
+            > b {
+               font-style: italic;
+            }
+         }
+      }
+   }
+}
+@media (max-width: 1450px) {
+   .contentC {
+      .heading {
+         .background {
+            background-position: center;
+         }
+      }
+   }
+}
+@media (max-width: 1250px) {
+   .contentC {
+      .heading {
+         height: 35rem;
+         .content {
+            padding: 0 1rem 0 3rem;
+         }
+         //      .background {
+         //         background-position: center;
+         //      }
+      }
+   }
+}
+@media (max-width: 1110px) {
+   .contentC {
+      .heading {
+         height: 60rem;
+         flex-direction: column;
+         gap: 1rem;
+         padding: 0 3rem;
+         .content {
+            width: 100%;
+            order: 2;
+            padding: 0;
+         }
+         .background {
+            margin-top: 4rem;
+            flex: none;
+            background-position: bottom;
+            height: 30rem;
+            width: 100%;
+         }
+      }
+      .itemC {
+         .item {
+            margin-top: 0rem;
+         }
+      }
+      .desC {
+      padding: 3rem;
+
+         .des {
+            flex-direction: column;
+            gap: 0.75rem;
+         }
+      }
+   }
+}
+@media (max-width: 800px) {
+   .contentC {
+      .itemC {
+         padding-top: 2rem;
+         flex-direction: column;
+         height: auto;
+         .item {
+            margin-top: 0rem;
+         }
+      }
+   }
+}
+@media (max-width: 540px) {
+   .contentC {
+      .heading {
+         border-radius: 0rem 0rem 2.5rem 2.5rem;
+
+         height: 60rem;
+         flex-direction: column;
+         gap: 1rem;
+         padding: 0 1.5rem;
+         .content {
+            width: 100%;
+            order: 2;
+            padding: 0;
+            .searchBox {
+               width: 100%;
+            }
+            .discover {
+               text-align: center;
+            }
+         }
+         .background {
+            margin-top: 4rem;
+            flex: none;
+            background-position: bottom;
+            height: 30rem;
+            width: 100%;
+         }
+      }
+   }
+}

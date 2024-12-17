@@ -57,7 +57,7 @@ export const WeRentWhy = () => {
 };
 const steps = [
    {
-      title: "7-year waiting list on section 8",
+      title: "The Affordable housing crisis is real",
       content: (
          <div>
             <b>The affordable housing crisis</b> has left countless families struggling to find safe and stable homes
@@ -72,7 +72,7 @@ const steps = [
       backgroundColor: "#FFDCC9",
    },
    {
-      title: "Renovate Above Market Standards",
+      title: "7-year waiting List for HCV prospective tenants",
       content: (
          <div>
             <b>Families aren't asking for charity; they're simply seeking a fair shot at life.</b> We believe that
@@ -86,7 +86,7 @@ const steps = [
       backgroundColor: "#E0F1FF",
    },
    {
-      title: "Long-Term Focus for Livability and Safety",
+      title: "HUD is pushing for more owner support",
       content: (
          <div>
             <b>The challenge of affordable housing is not just an affordability crisis but also an identity crisis.</b>{" "}
@@ -101,7 +101,7 @@ const steps = [
       backgroundColor: "#FFECBF",
    },
    {
-      title: "Long-Term Focus for Livability and Safety",
+      title: "Stable housing for people in need",
       content: (
          <div>
             <b>

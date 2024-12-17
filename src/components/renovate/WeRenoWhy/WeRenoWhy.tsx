@@ -1,78 +1,52 @@
 "use client";
-import styles from "./WeRenoWhy.module.scss";
 import { icons, icons_we_renovate } from "@/utils/icon";
+import styles from "./WeRenoWhy.module.scss";
 import Image from "next/image";
 
 import { useState } from "react";
 
 export const WeRenoWhy = () => {
-   const [show, setShow] = useState<number>(0);
-
+   const [expand, setExpand] = useState(false);
    return (
       <div className={`${styles.contentC}`}>
-         <h2 className={styles.title}>High standards</h2>
-         <div className={styles.processC}>
-            <div className={styles.process}>
-               {steps.map(({ title, content, image }, i) => (
-                  <div key={i} className={`${styles.stepsC}`}>
-                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
-                        <span>{title}</span>
-                        <Image
-                           alt=""
-                           src={
-                              show == i
-                                 ? icons_we_renovate.expand.less.trimEnd()
-                                 : icons_we_renovate.expand.more.trimEnd()
-                           }
-                           width={24}
-                           height={24}
-                        />
-                     </div>
-                     <div key={i} className={`${styles.description} ${show === i && styles.active}`}>
-                        <span>{content}</span>
-                        <div className={styles.stepsImg}>
-                           {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
-                        </div>
-                     </div>
-                  </div>
-               ))}
-            </div>
-            <div className={styles.descriptionC}>
-               {steps.map(({ title, content, image }, i) => (
-                  <div
-                     key={i}
-                     // onClick={() => setShow(i)}
-                     className={`${styles.description} ${show === i ? styles.active : ""}`}
-                  >
-                     <span>{content}</span>
-                     <div className={styles.stepsImg}>
-                        {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
-                     </div>
-                  </div>
-               ))}
+         <div
+            className={`${styles.banner} ${expand && styles.active}`}
+            style={{ backgroundImage: `url(${icons_we_renovate.why.banner})` }}
+         >
+            {/* <Image src={icons_we_renovate.hero.banner.trimEnd()} alt="" width={400} height={400} /> */}
+         </div>
+         <div className={`${styles.content}`}>
+            <h1>Why We Renovate?</h1>
+            <p>
+               Real estate is built on long-term commitments and stability, and our approach to renovations reflects
+               this by investing in homes with a focus on lasting impact. When we invest in a house, we&apos;re not just
+               buying a property—we&apos;re making a long-term commitment to a family and to a community.
+            </p>
+            {expand && (
+               <>
+                  <p>
+                     We are driven by the need to value-engineer homes that exceed modern standards while still
+                     affordable to those who need them the most. Through thoughtful renovations, we create homes that
+                     are not just livable but desirable, fostering a sense of security, comfort, and pride among our
+                     tenants. We firmly believe that this commitment to excellence brings long-lasting value and
+                     rejuvenates the fabric of strong communities.
+                  </p>
+                  <p>
+                     At the core of our renovation commitment is creating homes that provide comfort, security, and a
+                     place where people can build lasting memories.
+                  </p>
+               </>
+            )}
+            <div className={`${styles.expand}`} onClick={() => setExpand(!expand)}>
+               {expand ? "Read Less" : "Read More"}
+               <Image
+                  src={expand ? icons_we_renovate.why.less.trimEnd() : icons_we_renovate.why.more.trimEnd()}
+                  alt=""
+                  width={18}
+                  height={18}
+               />
             </div>
          </div>
       </div>
    );
 };
-
-const steps = [
-   {
-      title: "Create Safe and Clean Homes",
-      content:
-         "Ensuring that homes meet and exceed safety, cleanliness, and habitability of housing. This includes adhering to and surpassing HUD's nSpire checklist, which sets the benchmark for livability and safety in affordable housing.",
-      image: icons_we_renovate.high["high1"],
-   },
-   {
-      title: "Renovate Above Market Standards",
-      content:
-         "Exceeding typical renovation standards ensures that homes are not just functional but desirable. This approach often involves using higher-quality materials and finishes, which provide long-term durability and reduce maintenance costs, making the homes more attractive to tenants.",
-      image: icons_we_renovate.high["high2"],
-   },
-   {
-      title: "Long-Term Focus for Livability and Safety",
-      content:
-         "Value engineering emphasizes creating homes that are not just suitable for today but built to last. This long-term focus on livability and safety ensures that the properties remain viable and desirable for years to come.",
-      image: icons_we_renovate.high["high3"],
-   },
-];

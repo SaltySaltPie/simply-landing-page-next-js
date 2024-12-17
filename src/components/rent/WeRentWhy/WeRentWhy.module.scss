@@ -33,6 +33,8 @@
                &.active {
                   background: var(--primary-500, #1a2d3d);
                   color: var(--base-white, #fff);
+               font-weight: 700;
+
                   > img {
                      filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7461%) hue-rotate(111deg)
                         brightness(104%) contrast(99%);

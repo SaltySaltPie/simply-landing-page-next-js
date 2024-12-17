@@ -152,9 +152,11 @@ export const icons_we_buy = {
    value: {
       house_white: CF_CDN_URL_WE_BUY("/house_white.svg"),
       location: CF_CDN_URL_WE_BUY("/location_on.svg"),
+      doc: CF_CDN_URL_WE_BUY("/circle.svg"),
+      bedroom: CF_CDN_URL_WE_BUY("/bedroom.png"),
    },
    map: {
-      Pittsburgh: CF_CDN_URL_WE_BUY("/Pittsburgh.png"),
+      Pittsburgh: CF_CDN_URL_WE_RENT("/Pittsburgh.png"),
       Cleveland: CF_CDN_URL_WE_BUY("/Cleveland.png"),
       Indianapolis: CF_CDN_URL_WE_BUY("/Indianapolis.png"),
    },
