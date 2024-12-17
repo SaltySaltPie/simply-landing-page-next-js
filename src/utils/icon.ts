@@ -2,6 +2,7 @@ import { CF_CDN_URL } from "@/utils/CF_CDN_URL";
 import { CF_CDN_URL_WE } from "./CF_CDN_URL_WE";
 import { CF_CDN_URL_WE_RENOVATE } from "./CF_CND_WE_RENOVATE";
 import { CF_CDN_URL_WE_RENT } from "./CF_CND_WE_RENT";
+import { CF_CDN_URL_WE_BUY } from "./CF_CND_WE_BUY";
 
 export const icons = {
    common: {
@@ -136,5 +137,28 @@ export const icons_we_rent = {
    expand: {
       less: CF_CDN_URL_WE_RENOVATE("/expand_less.svg"),
       more: CF_CDN_URL_WE_RENOVATE("/expand_more.svg"),
+   },
+};
+
+export const icons_we_buy = {
+   hero: {
+      banner: CF_CDN_URL_WE_BUY("/hero.png"),
+   },
+   group: {
+      money: CF_CDN_URL_WE_BUY("/monetization_on.svg"),
+      house_orange: CF_CDN_URL_WE_BUY("/house_orange.svg"),
+      night_shelter: CF_CDN_URL_WE_BUY("/night_shelter.svg"),
+   },
+   value: {
+      house_white: CF_CDN_URL_WE_BUY("/house_white.svg"),
+      location: CF_CDN_URL_WE_BUY("/location_on.svg"),
+   },
+   map: {
+      Pittsburgh: CF_CDN_URL_WE_BUY("/Pittsburgh.png"),
+      Cleveland: CF_CDN_URL_WE_BUY("/Cleveland.png"),
+      Indianapolis: CF_CDN_URL_WE_BUY("/Indianapolis.png"),
+   },
+   property: {
+      person: CF_CDN_URL_WE_BUY("/person.svg"),
    },
 };
