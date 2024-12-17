@@ -1,0 +1,64 @@
+.contentC {
+   padding: 5rem 8rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
+   > h1 {
+      text-align: center;
+   }
+   .location {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      > button {
+         width: 7rem;
+         display: flex;
+         padding: 0.625rem 1.25rem;
+         justify-content: center;
+         align-items: center;
+         border-radius: 5rem;
+         color: var(--neutral-600, #68696a);
+         //  background: var(--primary-500, #1a2d3d);
+         background: var(--neutral-100, #e6e6e6);
+         &.active,
+         &:hover {
+            color: var(--base-white, #fff);
+            background: var(--primary-500, #1a2d3d);
+            font-weight: 700;
+         }
+      }
+   }
+   .content {
+      display: none;
+      gap: 5rem;
+ > img {
+            width: 100%;
+            height: fit-content;
+         }
+    //   .image {
+    //      flex: 1 0 0;
+        
+    //   }
+      .neighborhood {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+         flex: 1 0 0;
+         > div {
+            display: flex;
+            align-items: center;
+            // color: var(--primary-500, #1A2D3D);
+            width: 15rem;
+            height: 3rem;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.75rem;
+            border: 1px solid var(--neutral-300, #c0c1c1);
+            // background: var(--base-white, #fff);
+         }
+      }
+      &.active {
+         display: flex;
+      }
+   }
+}
