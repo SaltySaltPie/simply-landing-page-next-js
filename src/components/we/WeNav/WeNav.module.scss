@@ -29,6 +29,12 @@
          display: flex;
          align-items: center;
          gap: 1.5rem;
+         > li {
+            &.active{
+               color: var(--info-500, #295BFF);
+               font-weight: 700;
+            }
+         }
       }
    }
 

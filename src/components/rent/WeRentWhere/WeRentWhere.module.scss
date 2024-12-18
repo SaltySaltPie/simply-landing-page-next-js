@@ -32,18 +32,18 @@
    .content {
       display: none;
       gap: 5rem;
- > img {
-            width: 100%;
-            height: fit-content;
-         }
-    //   .image {
-    //      flex: 1 0 0;
-        
-    //   }
+      > img {
+         width: 60%;
+         height: fit-content;
+      }
+      //   .image {
+      //      flex: 1 0 0;
+
+      //   }
       .neighborhood {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1.5rem;
          flex: 1 0 0;
          > div {
             display: flex;
@@ -58,7 +58,9 @@
          }
       }
       &.active {
+         width: 100%;
          display: flex;
+         justify-content: center;
       }
    }
 }

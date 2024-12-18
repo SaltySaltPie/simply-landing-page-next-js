@@ -10,6 +10,7 @@ export const WeNav = () => {
    const { navItems } = useNavItems();
    const { content } = useContent();
    const [showMobileNav, setShowMobileNav] = useState(false);
+   const [active, setActive] = useState(0);
    return (
       <nav className={`${styles.contentC}`}>
          <div className={`${styles.content}`}>
@@ -17,9 +18,14 @@ export const WeNav = () => {
                <Image src={icons.nav.logo.trimEnd()} alt="" width={24} height={24} />
             </div>
             <ul className={`${styles.navItems} ${showMobileNav && styles.showMobileNav}`}>
-               {navItems.map((item) => (
-                  <li key={item.title}>
-                     <Link href={item.href} onClick={() => setShowMobileNav(false)}>
+               {navItems.map((item, index) => (
+                  <li key={item.title} className={`${active === index ? styles.active : ""}`}>
+                     <Link
+                        href={item.href}
+                        onClick={() => {
+                           setActive(index), setShowMobileNav(false);
+                        }}
+                     >
                         {item.title}
                      </Link>
                   </li>
