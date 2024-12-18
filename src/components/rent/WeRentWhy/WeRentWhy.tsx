@@ -75,8 +75,8 @@ const steps = [
       title: "7-year waiting List for HCV prospective tenants",
       content: (
          <div>
-            <b>Families aren't asking for charity; they're simply seeking a fair shot at life.</b> We believe that
-            everyone deserves the opportunity to live in stable, secure housing, regardless of their economic
+            <b>Families aren&apos;t asking for charity; they&apos;re simply seeking a fair shot at life.</b> We believe
+            that everyone deserves the opportunity to live in stable, secure housing, regardless of their economic
             circumstances. By <b>making affordable homes accessible to those who need it the most,</b> we provide a
             crucial lifeline for those in need, offering them a chance to find stability, rebuild their lives, and
             create a foundation for a better future.

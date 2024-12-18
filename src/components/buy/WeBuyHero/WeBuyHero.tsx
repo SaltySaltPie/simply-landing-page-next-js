@@ -21,7 +21,7 @@ export const WeBuyHero = () => {
                      <Image src={icons.header.arrow_forward.trimEnd()} alt="" width={20} height={20} />
                   </div>
                </div>
-               <div className={`${styles.discover}`}>Discover if we're in your neighborhood!</div>
+               <div className={`${styles.discover}`}>Discover if we&rsquo;re in your neighborhood!</div>
             </div>
             <div
                className={`${styles.background}`}

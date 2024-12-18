@@ -11,6 +11,10 @@ export const WeNav = () => {
    const { content } = useContent();
    const [showMobileNav, setShowMobileNav] = useState(false);
    const [active, setActive] = useState(0);
+   const handleNavClick = (index: number) => {
+      setActive(index);
+      setShowMobileNav(false);
+   };
    return (
       <nav className={`${styles.contentC}`}>
          <div className={`${styles.content}`}>
@@ -20,12 +24,7 @@ export const WeNav = () => {
             <ul className={`${styles.navItems} ${showMobileNav && styles.showMobileNav}`}>
                {navItems.map((item, index) => (
                   <li key={item.title} className={`${active === index ? styles.active : ""}`}>
-                     <Link
-                        href={item.href}
-                        onClick={() => {
-                           setActive(index), setShowMobileNav(false);
-                        }}
-                     >
+                     <Link href={item.href} onClick={() => handleNavClick(index)}>
                         {item.title}
                      </Link>
                   </li>
