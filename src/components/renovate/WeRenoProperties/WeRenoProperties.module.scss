@@ -10,7 +10,7 @@
    .carousel {
       width: 100%;
       position: relative;
-      height: 40rem;
+      height: 44rem;
       .property {
          display: flex;
          flex-direction: column;
@@ -21,11 +21,19 @@
          background-color: var(--base-white, #ffffff);
          padding: 1.5rem 1.5rem 3rem 1.5rem;
          margin: 0 0.5rem;
-         .photo {
-            margin-inline: auto;
-            width: 26.25rem;
-            height: 26.25rem;
-            position: relative;
+         .compare {
+            height: 23rem;
+            align-items: flex-start;
+            .photo {
+               margin-inline: auto;
+               width: 100%;
+               height: 20.25rem;
+               position: relative;
+               > img {
+                  border-radius: 0.75rem;
+                  object-fit: cover;
+               }
+            }
          }
          .location {
             display: flex;
@@ -38,6 +46,9 @@
                   filter: var(--Terracotta-filter);
                }
             }
+         }
+         > span {
+            height: 6rem;
          }
       }
    }
@@ -56,7 +67,7 @@
    .contentC {
       padding: 4rem 1rem;
       .carousel {
-         height: 26rem;
+         height: 40rem;
          .property {
             padding: 1rem 1rem 2rem 1rem;
             gap: 1rem;
