@@ -1,6 +1,8 @@
 .contentC {
    display: flex;
    justify-content: space-between;
+   max-width: 1440px;
+   margin-inline: auto;
    .leftC {
       max-width: 70rem;
       flex-grow: 1;
