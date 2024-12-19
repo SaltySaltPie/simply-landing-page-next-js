@@ -82,17 +82,22 @@
       }
    }
    .desC {
-      padding: 3rem 8rem;
+      padding: 5rem 8rem;
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      align-items: center;
+      gap: 7.5rem;
       .des {
          display: flex;
+         gap: 10rem;
          > h2 {
-            width: 35%;
+            // width: 35%;
+            width: 21rem;
+            white-space: nowrap;
          }
          > span {
-            width: 45%;
+            // width: 45%;
+            max-width: 43.4375rem;
             > b {
                font-style: italic;
             }
