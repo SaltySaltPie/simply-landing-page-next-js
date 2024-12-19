@@ -47,16 +47,7 @@ export const WeProcess = () => {
                      <div className={`${styles.description} ${show === i ? styles.active : ""}`}>
                         <span>{content}</span>
                         <div className={styles.stepsImg}>
-                           {image && (
-                              <Image
-                                 alt={title}
-                                 src={image.trimEnd()}
-                                 width={300}
-                                 height={200}
-                                 quality={100}
-                                 sizes="100vw"
-                              />
-                           )}
+                           {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} sizes="100vw" />}
                         </div>
                      </div>
                   </div>
