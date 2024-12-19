@@ -9,7 +9,7 @@ export const LaPaBusiness = () => {
    return (
       <div className={`${styles.contentC}`} id="business">
          <div className={`${styles.leftC}`}>
-            <h4>{content.business?.title || "We really buy houses"}</h4>
+            <h2>{content.business?.title || "We really buy houses"}</h2>
             <div className={`${styles.paragraphsC}`}>
                {content.business?.paragraphs.map((p, i) => (
                   <p key={i}>{p}</p>
