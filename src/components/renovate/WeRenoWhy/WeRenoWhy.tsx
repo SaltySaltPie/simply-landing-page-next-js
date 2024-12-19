@@ -1,5 +1,5 @@
 "use client";
-import { icons, icons_we_renovate } from "@/utils/icon";
+import { icons_we_renovate } from "@/utils/icon";
 import styles from "./WeRenoWhy.module.scss";
 import Image from "next/image";
 
@@ -12,9 +12,7 @@ export const WeRenoWhy = () => {
          <div
             className={`${styles.banner} ${expand && styles.active}`}
             style={{ backgroundImage: `url(${icons_we_renovate.why.banner})` }}
-         >
-            {/* <Image src={icons_we_renovate.hero.banner.trimEnd()} alt="" width={400} height={400} /> */}
-         </div>
+         ></div>
          <div className={`${styles.content}`}>
             <h1>Why We Renovate?</h1>
             <p>

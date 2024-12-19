@@ -76,17 +76,17 @@ export const icons_we = {
       process_bg: CF_CDN_URL_WE("/process/process_man_bg.png"),
       play_arrow: CF_CDN_URL_WE("/process/play_arrow_black.svg"),
       play_arrow_outline_black: CF_CDN_URL_WE("/process/play_arrow_outline_black.svg"),
-      process1: CF_CDN_URL_WE("/process/process1.png"),
-      process2: CF_CDN_URL_WE("/process/process2.png"),
-      process3: CF_CDN_URL_WE("/process/process3.png"),
-      process4: CF_CDN_URL_WE("/process/process4.png"),
-      process5: CF_CDN_URL_WE("/process/process5.png"),
+      process1: CF_CDN_URL_WE("/process/Frame 11.png"),
+      process2: CF_CDN_URL_WE("/process/export.png"),
+      process3: CF_CDN_URL_WE("/process/icon.png"),
+      process4: CF_CDN_URL_WE("/process/Icon.png"),
+      process5: CF_CDN_URL_WE("/process/Icon5.png"),
    },
 };
 
 export const icons_we_renovate = {
    hero: {
-      banner: CF_CDN_URL_WE_RENOVATE("/hero/hero.png"),
+      banner: CF_CDN_URL_WE_RENOVATE("/hero/hero_bg.png"),
    },
    question: CF_CDN_URL_WE_RENOVATE("/question/question.svg"),
    why: {
@@ -95,18 +95,18 @@ export const icons_we_renovate = {
       less: CF_CDN_URL_WE_RENOVATE("/why/keyboard_double_arrow_up.svg"),
    },
    high: {
-      high1: CF_CDN_URL_WE_RENOVATE("/high-standard/high1.png"),
-      high2: CF_CDN_URL_WE_RENOVATE("/high-standard/high2.png"),
-      high3: CF_CDN_URL_WE_RENOVATE("/high-standard/high3.png"),
+      high1: CF_CDN_URL_WE_RENOVATE("/high-standard/h1.png"),
+      high2: CF_CDN_URL_WE_RENOVATE("/high-standard/h2.png"),
+      high3: CF_CDN_URL_WE_RENOVATE("/high-standard/h3.png"),
    },
    affordability: {
-      affordability1: CF_CDN_URL_WE_RENOVATE("/affordability/affordability1.png"),
-      affordability2: CF_CDN_URL_WE_RENOVATE("/affordability/affordability2.png"),
-      affordability3: CF_CDN_URL_WE_RENOVATE("/affordability/affordability3.png"),
+      affordability1: CF_CDN_URL_WE_RENOVATE("/affordability/a1.png"),
+      affordability2: CF_CDN_URL_WE_RENOVATE("/affordability/a2.png"),
+      affordability3: CF_CDN_URL_WE_RENOVATE("/affordability/a3.png"),
    },
    community: {
-      community1: CF_CDN_URL_WE_RENOVATE("/community-driven/community1.png"),
-      community2: CF_CDN_URL_WE_RENOVATE("/community-driven/community2.png"),
+      community1: CF_CDN_URL_WE_RENOVATE("/community-driven/c1.png"),
+      community2: CF_CDN_URL_WE_RENOVATE("/community-driven/c2.png"),
    },
    expand: {
       less: CF_CDN_URL_WE_RENOVATE("/expand_less.svg"),
@@ -119,18 +119,18 @@ export const icons_we_rent = {
       banner: CF_CDN_URL_WE_RENT("/hero.png"),
    },
    who: {
-      who: CF_CDN_URL_WE_RENT("/who.png"),
+      who: CF_CDN_URL_WE_RENT("/who_family.png"),
       more: CF_CDN_URL_WE_RENOVATE("/keyboard_double_arrow_down.svg"),
       less: CF_CDN_URL_WE_RENOVATE("/keyboard_double_arrow_up.svg"),
    },
    why: {
-      why1: CF_CDN_URL_WE_RENT("/why1.png"),
-      why2: CF_CDN_URL_WE_RENT("/why2.png"),
-      why3: CF_CDN_URL_WE_RENT("/why3.png"),
-      why4: CF_CDN_URL_WE_RENT("/why4.png"),
+      why1: CF_CDN_URL_WE_RENT("/w1.png"),
+      why2: CF_CDN_URL_WE_RENT("/w2.png"),
+      why3: CF_CDN_URL_WE_RENT("/w3.png"),
+      why4: CF_CDN_URL_WE_RENT("/w4.png"),
    },
    map: {
-      Pittsburgh: CF_CDN_URL_WE_RENT("/Pittsburgh.png"),
+      Pittsburgh: CF_CDN_URL_WE_RENT("/pit.png"),
       Cleveland: CF_CDN_URL_WE_RENT("/Cleveland.png"),
       Indianapolis: CF_CDN_URL_WE_RENT("/Indianapolis.png"),
    },

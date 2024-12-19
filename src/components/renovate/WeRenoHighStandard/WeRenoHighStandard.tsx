@@ -3,7 +3,7 @@ import styles from "./WeRenoHighStandard.module.scss";
 
 import Image from "next/image";
 import { useState } from "react";
-import { icons_we, icons_we_renovate } from "@/utils/icon";
+import { icons_we_renovate } from "@/utils/icon";
 export const WeRenoHighStandard = () => {
    const [show, setShow] = useState<number>(0);
 
@@ -12,7 +12,7 @@ export const WeRenoHighStandard = () => {
          <h2 className={styles.title}>High standards</h2>
          <div className={styles.processC}>
             <div className={styles.process}>
-               {steps.map(({ title, content, image }, i) => (
+               {steps.map(({ title }, i) => (
                   <div key={i} className={`${styles.stepsC}`}>
                      <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <span>{title}</span>

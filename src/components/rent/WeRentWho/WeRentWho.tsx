@@ -9,7 +9,7 @@ export const WeRentWho = () => {
    return (
       <div className={`${styles.contentC}`}>
          <div className={`${styles.content}`}>
-            <h1>Why We Renovate?</h1>
+            <h1>Who do we rent to?</h1>
             <p>
                We rent to individuals and families who are looking for more than just a place to live—they seek a home
                where they can build a better future.
@@ -39,15 +39,14 @@ export const WeRentWho = () => {
                   alt=""
                   width={18}
                   height={18}
+                  sizes="100vw"
                />
             </div>
          </div>
          <div
             className={`${styles.banner} ${expand && styles.active}`}
             style={{ backgroundImage: `url(${icons_we_rent.who.who})` }}
-         >
-            {/* <Image src={icons_we_renovate.hero.banner.trimEnd()} alt="" width={400} height={400} /> */}
-         </div>
+         ></div>
       </div>
    );
 };

@@ -17,7 +17,7 @@ export const LaPaAbout = () => {
                </Link>
             </div>
             <div className={`${styles.banner}`}>
-               <Image alt="logo" src={CF_CDN_URL("/assets/about/banner.svg")} fill sizes="50vw" />
+               <Image alt="logo" src={CF_CDN_URL("/assets/about/about_us.png")} fill sizes="100vw" />
             </div>
          </div>
       </div>

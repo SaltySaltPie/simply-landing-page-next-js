@@ -1,5 +1,5 @@
 "use client";
-import { icons, icons_we_renovate } from "@/utils/icon";
+import { icons_we_renovate } from "@/utils/icon";
 import styles from "./WeRenoHero.module.scss";
 
 export const WeRenoHero = () => {
@@ -13,9 +13,7 @@ export const WeRenoHero = () => {
                and history of each community we serve.
             </p>
          </div>
-         <div className={`${styles.banner}`} style={{ backgroundImage: `url(${icons_we_renovate.hero.banner})` }}>
-            {/* <Image src={icons_we_renovate.hero.banner.trimEnd()} alt="" width={400} height={400} /> */}
-         </div>
+         <div className={`${styles.banner}`} style={{ backgroundImage: `url(${icons_we_renovate.hero.banner})` }}></div>
       </div>
    );
 };
