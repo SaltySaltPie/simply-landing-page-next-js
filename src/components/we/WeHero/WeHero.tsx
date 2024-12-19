@@ -13,7 +13,10 @@ export const WeHero = () => {
    if (!hero) return null;
    const { subtitle, title } = hero;
    return (
-      <div className={`${styles.heroC}`} style={{ backgroundImage: `url(${icons_we.hero.banner})` }}>
+      <div
+         className={`${styles.heroC}`}
+         // style={{ backgroundImage: `url(${icons_we.hero.banner})` }}
+      >
          <div className={`${styles.title}`}>
             <h3>{subtitle}</h3>
             <h1>{title}</h1>
@@ -26,6 +29,9 @@ export const WeHero = () => {
             <div className={`${styles.iconAgency}`}>
                <Image src={icons.header.hero.bigIcon["bbb"]} alt="" fill sizes="10vw" />
             </div>
+         </div>
+         <div className={`${styles.banner}`}>
+            <Image src={icons_we.hero.banner} alt="" fill />
          </div>
       </div>
    );
