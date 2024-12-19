@@ -116,7 +116,7 @@ export const icons_we_renovate = {
 
 export const icons_we_rent = {
    hero: {
-      banner: CF_CDN_URL_WE_RENT("/hero.png"),
+      banner: CF_CDN_URL_WE_RENT("/banner_rent.png"),
    },
    who: {
       who: CF_CDN_URL_WE_RENT("/who_family.png"),
@@ -153,10 +153,10 @@ export const icons_we_buy = {
       house_white: CF_CDN_URL_WE_BUY("/house_white.svg"),
       location: CF_CDN_URL_WE_BUY("/location_on.svg"),
       doc: CF_CDN_URL_WE_BUY("/circle.svg"),
-      bedroom: CF_CDN_URL_WE_BUY("/bedroom.png"),
+      bedroom: CF_CDN_URL_WE_BUY("/Rectangle 4.png"),
    },
    map: {
-      Pittsburgh: CF_CDN_URL_WE_RENT("/Pittsburgh.png"),
+      Pittsburgh: CF_CDN_URL_WE_RENT("/pit.png"),
       Cleveland: CF_CDN_URL_WE_BUY("/Cleveland.png"),
       Indianapolis: CF_CDN_URL_WE_BUY("/Indianapolis.png"),
    },
