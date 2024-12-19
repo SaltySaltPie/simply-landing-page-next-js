@@ -5,26 +5,34 @@ import Link from "next/link";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export const WeNav = () => {
+   const path = usePathname();
    const { navItems } = useNavItems();
    const { content } = useContent();
    const [showMobileNav, setShowMobileNav] = useState(false);
-   const [active, setActive] = useState(0);
-   const handleNavClick = (index: number) => {
-      setActive(index);
+   const [active, setActive] = useState("/");
+
+   const handleNavClick = (href: string) => {
+      setActive(href);
       setShowMobileNav(false);
    };
+
+   console.log("active", active);
+   console.log("navItems", navItems);
+   console.log("path", path);
+
    return (
       <nav className={`${styles.contentC}`}>
          <div className={`${styles.content}`}>
             <div className={`${styles.logoC}`}>
-               <Image src={icons.nav.logo.trimEnd()} alt="" width={24} height={24} />
+               <Image src={icons.nav.logo.trimEnd()} alt="" width={24} height={24} sizes="100vw" />
             </div>
             <ul className={`${styles.navItems} ${showMobileNav && styles.showMobileNav}`}>
-               {navItems.map((item, index) => (
-                  <li key={item.title} className={`${active === index ? styles.active : ""}`}>
-                     <Link href={item.href} onClick={() => handleNavClick(index)}>
+               {navItems.map((item, i) => (
+                  <li key={item.title + i} className={`${item.href === path ? styles.active : ""}`}>
+                     <Link href={item.href} onClick={() => handleNavClick(item.href)}>
                         {item.title}
                      </Link>
                   </li>

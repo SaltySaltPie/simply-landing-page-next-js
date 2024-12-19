@@ -8,7 +8,7 @@ export const LaPaAbout = () => {
    const { about } = content;
    if (!about) return null;
    return (
-      <div className={`${styles.contentC}`}>
+      <div className={`${styles.contentC}`} id="about-us">
          <div>
             <div className={`${styles.content}`}>
                {about?.title && <h2>{about.title}</h2>}
