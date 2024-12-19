@@ -13,7 +13,7 @@ export const WeRentWhy = () => {
          <h2 className={styles.title}>Why do we rent?</h2>
          <div className={styles.processC}>
             <div className={styles.process}>
-               {steps.map(({ title, content, image }, i) => (
+               {steps.map(({ title }, i) => (
                   <div key={i} className={`${styles.stepsC}`}>
                      <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <span>{title}</span>
