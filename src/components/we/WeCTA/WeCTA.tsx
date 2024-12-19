@@ -6,7 +6,7 @@ import { icons_we } from "@/utils/icon";
 export const WeCTA = () => {
    return (
       <div className={`${styles.contentC}`}>
-         <div className={`${styles.content}`} style={{ backgroundImage: `url(${icons_we.CTA.cta_bg})` }}>
+         <div className={`${styles.content}`}>
             <div className={`${styles.titleC}`}>
                {/* <h2>{CTAData.title}</h2>
                <h4>{CTAData.subTitle}</h4> */}
@@ -16,9 +16,9 @@ export const WeCTA = () => {
             <Link href={""}>
                <h5>Get an Offer</h5>
             </Link>
-            {/* <div className={`${styles.backgroundImg}`}>
-               <Image src={icons_we.CTA.cta_bg.trimEnd()} alt="" width={200} height={20} />
-            </div> */}
+            <div className={`${styles.backgroundImg}`}>
+               <Image src={icons_we.CTA.cta_bg.trimEnd()} alt="" fill />
+            </div>
          </div>
       </div>
    );
