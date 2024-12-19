@@ -3,7 +3,7 @@
 import { icons_we_renovate } from "@/utils/icon";
 import { Process } from "@/components/process/Process";
 export const WeRenoCommunityDriven = () => {
-   return <Process steps={steps} header="Community driven" />;
+   return <Process steps={steps} header="Community driven" type="expand" />;
 };
 const steps = [
    {

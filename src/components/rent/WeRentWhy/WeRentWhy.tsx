@@ -3,7 +3,7 @@ import { Process } from "@/components/process/Process";
 import { icons_we_rent } from "@/utils/icon";
 
 export const WeRentWhy = () => {
-   return <Process steps={steps} header="Why do we rent?" />;
+   return <Process steps={steps} header="Why do we rent?" type="expand" />;
 };
 const steps = [
    {

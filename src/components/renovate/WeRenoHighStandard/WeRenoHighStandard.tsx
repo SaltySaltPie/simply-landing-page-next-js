@@ -2,7 +2,7 @@
 import { icons_we_renovate } from "@/utils/icon";
 import { Process } from "@/components/process/Process";
 export const WeRenoHighStandard = () => {
-   return <Process steps={steps} header="High standards" />;
+   return <Process steps={steps} header="High standards" type="expand" />;
 };
 
 const steps = [

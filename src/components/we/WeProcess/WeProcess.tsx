@@ -1,7 +1,7 @@
 import { icons_we } from "@/utils/icon";
 import { Process } from "@/components/process/Process";
 export const WeProcess = () => {
-   return <Process steps={steps} header="How does this process work?" isPlayIcon />;
+   return <Process steps={steps} header="How does this process work?" type="collapse" />;
 };
 
 const steps = [
