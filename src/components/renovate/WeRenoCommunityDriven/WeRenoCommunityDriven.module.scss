@@ -3,13 +3,12 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   padding: 2rem 0;
+   padding: 5rem 8rem 3.94rem 8rem;
    gap: 3rem;
    .processC {
       width: 100%;
       display: flex;
-      gap: 6rem;
-      padding: 0 8rem;
+      gap: 7rem;
       .process {
          gap: 0.5rem;
          flex-direction: column;
@@ -58,10 +57,9 @@
                display: none;
             }
             &.active {
-               padding-top: 0.5rem;
                display: flex;
                flex-direction: column;
-               gap: 2rem;
+               gap: 1.5rem;
                height: auto;
                width: 100%;
                opacity: 1;
