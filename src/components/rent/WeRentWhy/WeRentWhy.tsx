@@ -1,56 +1,9 @@
 "use client";
-import styles from "./WeRentWhy.module.scss";
-import { icons_we_renovate, icons_we_rent } from "@/utils/icon";
-import Image from "next/image";
-
-import { useState } from "react";
+import { Process } from "@/components/process/Process";
+import { icons_we_rent } from "@/utils/icon";
 
 export const WeRentWhy = () => {
-   const [show, setShow] = useState<number>(0);
-
-   return (
-      <div className={`${styles.contentC}`}>
-         <h2 className={styles.title}>Why do we rent?</h2>
-         <div className={styles.processC}>
-            <div className={styles.process}>
-               {steps.map(({ title }, i) => (
-                  <div key={i} className={`${styles.stepsC}`}>
-                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
-                        <span>{title}</span>
-                     </button>
-                  </div>
-               ))}
-            </div>
-            <div className={styles.stepsMobile}>
-               {steps.map(({ title, content, image }, i) => (
-                  <div key={i}>
-                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
-                        <span>{title}</span>
-                        <Image
-                           alt=""
-                           src={
-                              show == i
-                                 ? icons_we_renovate.expand.less.trimEnd()
-                                 : icons_we_renovate.expand.more.trimEnd()
-                           }
-                           width={24}
-                           height={24}
-                        />
-                     </button>
-                     <div key={i} className={`${styles.description} ${show === i ? styles.active : ""}`}>
-                        <span>{content}</span>
-                        <div className={styles.stepsImg}>
-                           {image && (
-                              <Image alt={title} src={image.trimEnd()} width={300} height={200} sizes={"100vw"} />
-                           )}
-                        </div>
-                     </div>
-                  </div>
-               ))}
-            </div>
-         </div>
-      </div>
-   );
+   return <Process steps={steps} header="Why do we rent?" />;
 };
 const steps = [
    {

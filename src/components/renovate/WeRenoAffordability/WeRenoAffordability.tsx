@@ -1,54 +1,8 @@
 "use client";
-import styles from "./WeRenoAffordability.module.scss";
-
-import Image from "next/image";
-import { useState } from "react";
-import { icons_we, icons_we_renovate } from "@/utils/icon";
+import { icons_we_renovate } from "@/utils/icon";
+import { Process } from "@/components/process/Process";
 export const WeRenoAffordability = () => {
-   const [show, setShow] = useState<number>(0);
-   return (
-      <div className={`${styles.contentC}`}>
-         <h2 className={styles.title}>Affordability</h2>
-         <div className={styles.processC}>
-            <div className={styles.process}>
-               {steps.map(({ title, content, image }, i) => (
-                  <div key={i} className={`${styles.stepsC}`}>
-                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
-                        <span>{title}</span>
-                     </button>
-                  </div>
-               ))}
-            </div>
-            <div className={styles.stepsMobile}>
-               {steps.map(({ title, content, image }, i) => (
-                  <div key={i}>
-                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
-                        <span>{title}</span>
-                        <Image
-                           alt=""
-                           src={
-                              show == i
-                                 ? icons_we_renovate.expand.less.trimEnd()
-                                 : icons_we_renovate.expand.more.trimEnd()
-                           }
-                           width={24}
-                           height={24}
-                        />
-                     </button>
-                     <div key={i} className={`${styles.description} ${show === i ? styles.active : ""}`}>
-                        <span>{content}</span>
-                        <div className={styles.stepsImg}>
-                           {image && (
-                              <Image alt={title} src={image.trimEnd()} width={300} height={200} sizes={"100vw"} />
-                           )}
-                        </div>
-                     </div>
-                  </div>
-               ))}
-            </div>
-         </div>
-      </div>
-   );
+   return <Process steps={steps} header="Affordability" />;
 };
 
 const steps = [
