@@ -12,7 +12,7 @@ export const WeProcess = () => {
             <div className={styles.process}>
                {steps.map(({ title }, i) => (
                   <div key={i} className={`${styles.stepsC}`}>
-                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
+                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <Image
                            alt=""
                            src={
@@ -24,14 +24,14 @@ export const WeProcess = () => {
                            height={24}
                         />
                         <span>{title}</span>
-                     </div>
+                     </button>
                   </div>
                ))}
             </div>
             <div className={styles.stepsMobile}>
                {steps.map(({ title, content, image }, i) => (
                   <div key={i}>
-                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
+                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <Image
                            alt=""
                            src={
@@ -43,7 +43,7 @@ export const WeProcess = () => {
                            height={24}
                         />
                         <span>{title}</span>
-                     </div>
+                     </button>
 
                      <div className={`${styles.description} ${show === i ? styles.active : ""}`}>
                         <span>{content}</span>

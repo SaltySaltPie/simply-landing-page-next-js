@@ -13,16 +13,16 @@ export const WeRenoAffordability = () => {
             <div className={styles.process}>
                {steps.map(({ title, content, image }, i) => (
                   <div key={i} className={`${styles.stepsC}`}>
-                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
+                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <span>{title}</span>
-                     </div>
+                     </button>
                   </div>
                ))}
             </div>
             <div className={styles.stepsMobile}>
                {steps.map(({ title, content, image }, i) => (
                   <div key={i}>
-                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
+                     <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <span>{title}</span>
                         <Image
                            alt=""
@@ -34,7 +34,7 @@ export const WeRenoAffordability = () => {
                            width={24}
                            height={24}
                         />
-                     </div>
+                     </button>
                      <div key={i} className={`${styles.description} ${show === i ? styles.active : ""}`}>
                         <span>{content}</span>
                         <div className={styles.stepsImg}>

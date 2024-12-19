@@ -1,4 +1,5 @@
 .contentC {
+   font-size: 1.125rem;
    .heading {
       border-radius: 0rem 0rem 5rem 5rem;
       background: var(--Primary-Sun, #ffe39b);
@@ -88,10 +89,10 @@
       .des {
          display: flex;
          > h2 {
-            flex: 1 0 0;
+            width: 35%;
          }
          > span {
-            flex: 1 0 0;
+            width: 45%;
             > b {
                font-style: italic;
             }
@@ -106,6 +107,16 @@
             background-position: center;
          }
       }
+      .desC {
+         .des {
+            > h2 {
+               flex: 1 0 0;
+            }
+            > span {
+               flex: 1 0 0;
+            }
+         }
+      }
    }
 }
 @media (max-width: 1250px) {
@@ -115,9 +126,16 @@
          .content {
             padding: 0 1rem 0 3rem;
          }
-         //      .background {
-         //         background-position: center;
-         //      }
+      }
+      .desC {
+         .des {
+            > h2 {
+               width: 100%;
+            }
+            > span {
+               width: 100%;
+            }
+         }
       }
    }
 }
@@ -147,7 +165,7 @@
          }
       }
       .desC {
-      padding: 3rem;
+         padding: 3rem;
 
          .des {
             flex-direction: column;
