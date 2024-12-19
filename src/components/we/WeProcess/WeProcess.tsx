@@ -29,7 +29,7 @@ export const WeProcess = () => {
             </div>
             <div className={styles.stepsMobile}>
                {steps.map(({ title, content, image }, i) => (
-                  <div key={i}>
+                  <div className={`${styles.stepsC} ${show === i && styles.active}`} key={i}>
                      <button onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <Image
                            alt=""
