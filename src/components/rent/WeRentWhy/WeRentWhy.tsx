@@ -66,7 +66,6 @@ const steps = [
       ),
 
       image: icons_we_rent.why["why1"],
-      backgroundColor: "#FFDCC9",
    },
    {
       title: "7-year waiting List for HCV prospective tenants",
@@ -80,7 +79,6 @@ const steps = [
          </div>
       ),
       image: icons_we_rent.why["why2"],
-      backgroundColor: "#E0F1FF",
    },
    {
       title: "HUD is pushing for more owner support",
@@ -95,7 +93,6 @@ const steps = [
          </div>
       ),
       image: icons_we_rent.why["why3"],
-      backgroundColor: "#FFECBF",
    },
    {
       title: "Stable housing for people in need",
@@ -111,6 +108,5 @@ const steps = [
          </div>
       ),
       image: icons_we_rent.why["why4"],
-      backgroundColor: "#D2F9E1",
    },
 ];
