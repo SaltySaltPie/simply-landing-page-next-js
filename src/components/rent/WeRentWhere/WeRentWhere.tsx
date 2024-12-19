@@ -11,16 +11,14 @@ export const WeRentWhere = () => {
          <h2>Where do we rent?</h2>
          <div className={`${styles.location}`}>
             {locations.map(({ location }, i) => (
-               <button key={i} onClick={() => setShow(i)} className={`${show === i && styles.active}`}>
+               <button type="button" key={i} onClick={() => setShow(i)} className={`${show === i && styles.active}`}>
                   {location}
                </button>
             ))}
          </div>
-         {locations.map(({ picture }, i) => (
-            <div key={i} className={`${styles.content} ${show === i && styles.active}`}>
-               <Image alt="" src={picture.trimEnd()} width={300} height={200} quality={100} sizes="100vw" />
-            </div>
-         ))}
+         <div key={show} className={`${styles.content}`}>
+            <Image alt="" src={locations[show].picture.trimEnd()} width={300} height={200} quality={100} sizes="100vw" />
+         </div>
       </div>
    );
 };
