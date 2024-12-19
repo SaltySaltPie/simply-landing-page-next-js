@@ -131,8 +131,8 @@ export const icons_we_rent = {
    },
    map: {
       Pittsburgh: CF_CDN_URL_WE_RENT("/pit.png"),
-      Cleveland: CF_CDN_URL_WE_RENT("/Cleveland.png"),
-      Indianapolis: CF_CDN_URL_WE_RENT("/Indianapolis.png"),
+      Cleveland: CF_CDN_URL_WE_RENT("/cle.png"),
+      Indianapolis: CF_CDN_URL_WE_RENT("/ind.png"),
    },
    expand: {
       less: CF_CDN_URL_WE_RENOVATE("/expand_less.svg"),
