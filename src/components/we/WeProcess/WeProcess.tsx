@@ -4,17 +4,13 @@ import Image from "next/image";
 import { useState } from "react";
 import { icons_we } from "@/utils/icon";
 export const WeProcess = () => {
-   const { content } = useContent();
    const [show, setShow] = useState<number>(0);
-   const { process } = content;
-   if (!process) return null;
-   // const { steps, title } = process;
    return (
       <div className={`${styles.contentC}`}>
          <h2 className={styles.title}>How does this process work?</h2>
          <div className={styles.processC}>
             <div className={styles.process}>
-               {steps.map(({ title, content, image }, i) => (
+               {steps.map(({ title }, i) => (
                   <div key={i} className={`${styles.stepsC}`}>
                      <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <Image
@@ -29,25 +25,31 @@ export const WeProcess = () => {
                         />
                         <span>{title}</span>
                      </div>
-                     <div key={i} className={`${styles.description} ${show === i && styles.active}`}>
+                  </div>
+               ))}
+            </div>
+            <div className={styles.stepsMobile}>
+               {steps.map(({ title, content, image }, i) => (
+                  <div key={i}>
+                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
+                        <Image
+                           alt=""
+                           src={
+                              show == i
+                                 ? icons_we.process.play_arrow.trimEnd()
+                                 : icons_we.process.play_arrow_outline_black.trimEnd()
+                           }
+                           width={24}
+                           height={24}
+                        />
+                        <span>{title}</span>
+                     </div>
+
+                     <div className={`${styles.description} ${show === i ? styles.active : ""}`}>
                         <span>{content}</span>
                         <div className={styles.stepsImg}>
                            {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
                         </div>
-                     </div>
-                  </div>
-               ))}
-            </div>
-            <div className={styles.descriptionC}>
-               {steps.map(({ title, content, image }, i) => (
-                  <div
-                     key={i}
-                     // onClick={() => setShow(i)}
-                     className={`${styles.description} ${show === i ? styles.active : ""}`}
-                  >
-                     <span>{content}</span>
-                     <div className={styles.stepsImg}>
-                        {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
                      </div>
                   </div>
                ))}

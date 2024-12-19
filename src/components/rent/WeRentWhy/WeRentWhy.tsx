@@ -10,11 +10,20 @@ export const WeRentWhy = () => {
 
    return (
       <div className={`${styles.contentC}`}>
-         <h2 className={styles.title}>High standards</h2>
+         <h2 className={styles.title}>Why do we rent?</h2>
          <div className={styles.processC}>
             <div className={styles.process}>
-               {steps.map(({ title, content, image, backgroundColor }, i) => (
+               {steps.map(({ title, content, image }, i) => (
                   <div key={i} className={`${styles.stepsC}`}>
+                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
+                        <span>{title}</span>
+                     </div>
+                  </div>
+               ))}
+            </div>
+            <div className={styles.stepsMobile}>
+               {steps.map(({ title, content, image }, i) => (
+                  <div key={i}>
                      <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <span>{title}</span>
                         <Image
@@ -28,25 +37,13 @@ export const WeRentWhy = () => {
                            height={24}
                         />
                      </div>
-                     <div key={i} className={`${styles.description} ${show === i && styles.active}`}>
+                     <div key={i} className={`${styles.description} ${show === i ? styles.active : ""}`}>
                         <span>{content}</span>
-                        <div className={styles.stepsImg} style={{ backgroundColor: `${backgroundColor}` }}>
-                           {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
+                        <div className={styles.stepsImg}>
+                           {image && (
+                              <Image alt={title} src={image.trimEnd()} width={300} height={200} sizes={"100vw"} />
+                           )}
                         </div>
-                     </div>
-                  </div>
-               ))}
-            </div>
-            <div className={styles.descriptionC}>
-               {steps.map(({ title, content, image, backgroundColor }, i) => (
-                  <div
-                     key={i}
-                     // onClick={() => setShow(i)}
-                     className={`${styles.description} ${show === i ? styles.active : ""}`}
-                  >
-                     <span>{content}</span>
-                     <div className={styles.stepsImg} style={{ backgroundColor: `${backgroundColor}` }}>
-                        {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
                      </div>
                   </div>
                ))}

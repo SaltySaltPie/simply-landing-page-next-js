@@ -16,6 +16,15 @@ export const WeRenoHighStandard = () => {
                   <div key={i} className={`${styles.stepsC}`}>
                      <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
                         <span>{title}</span>
+                     </div>
+                  </div>
+               ))}
+            </div>
+            <div className={styles.stepsMobile}>
+               {steps.map(({ title, content, image }, i) => (
+                  <div key={i}>
+                     <div onClick={() => setShow(i)} className={`${styles.steps} ${show === i && styles.active}`}>
+                        <span>{title}</span>
                         <Image
                            alt=""
                            src={
@@ -27,25 +36,13 @@ export const WeRenoHighStandard = () => {
                            height={24}
                         />
                      </div>
-                     <div key={i} className={`${styles.description} ${show === i && styles.active}`}>
+                     <div key={i} className={`${styles.description} ${show === i ? styles.active : ""}`}>
                         <span>{content}</span>
                         <div className={styles.stepsImg}>
-                           {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
+                           {image && (
+                              <Image alt={title} src={image.trimEnd()} width={300} height={200} sizes={"100vw"} />
+                           )}
                         </div>
-                     </div>
-                  </div>
-               ))}
-            </div>
-            <div className={styles.descriptionC}>
-               {steps.map(({ title, content, image }, i) => (
-                  <div
-                     key={i}
-                     // onClick={() => setShow(i)}
-                     className={`${styles.description} ${show === i ? styles.active : ""}`}
-                  >
-                     <span>{content}</span>
-                     <div className={styles.stepsImg}>
-                        {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} quality={100} />}
                      </div>
                   </div>
                ))}
