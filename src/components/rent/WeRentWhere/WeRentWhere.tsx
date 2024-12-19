@@ -8,7 +8,7 @@ export const WeRentWhere = () => {
 
    return (
       <div className={`${styles.contentC}`}>
-         <h1>Where do we rent?</h1>
+         <h2>Where do we rent?</h2>
          <div className={`${styles.location}`}>
             {locations.map(({ location }, i) => (
                <button key={i} onClick={() => setShow(i)} className={`${show === i && styles.active}`}>

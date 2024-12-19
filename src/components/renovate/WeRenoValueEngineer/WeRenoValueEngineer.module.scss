@@ -1,20 +1,20 @@
 .contentC {
    font-size: 1.125rem;
-    width: 100%;
+   width: 100%;
    background-color: var(--Secondary-Mint, #d2f9e1);
    padding: 5rem 8rem;
    display: flex;
    flex-direction: column;
    gap: 1.5rem;
    > div {
-    //   width: 3.5rem;
+      //   width: 3.5rem;
       height: 3.5rem;
       > img {
-        width: 100%;
-        height: 100%;
+         width: 100%;
+         height: 100%;
       }
    }
-   > h1 {
+   > h2 {
       text-align: center;
    }
    > p {

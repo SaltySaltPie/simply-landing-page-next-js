@@ -9,7 +9,7 @@ export const WeRentWho = () => {
    return (
       <div className={`${styles.contentC}`}>
          <div className={`${styles.content}`}>
-            <h1>Who do we rent to?</h1>
+            <h2>Who do we rent to?</h2>
             <p>
                We rent to individuals and families who are looking for more than just a place to live—they seek a home
                where they can build a better future.

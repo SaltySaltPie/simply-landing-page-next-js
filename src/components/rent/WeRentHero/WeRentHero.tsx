@@ -12,7 +12,7 @@ export const WeRentHero = () => {
                renovated, desirable homes, we empower underserved families to begin their next chapter with a solid
                foundation.
             </div>
-            <button>CTA</button>
+            {/* <button>CTA</button> */}
          </div>
       </div>
    );

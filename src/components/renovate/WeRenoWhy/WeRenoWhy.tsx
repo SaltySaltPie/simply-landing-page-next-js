@@ -14,7 +14,7 @@ export const WeRenoWhy = () => {
             style={{ backgroundImage: `url(${icons_we_renovate.why.banner})` }}
          ></div>
          <div className={`${styles.content}`}>
-            <h1>Why We Renovate?</h1>
+            <h2>Why We Renovate?</h2>
             <p>
                Real estate is built on long-term commitments and stability, and our approach to renovations reflects
                this by investing in homes with a focus on lasting impact. When we invest in a house, we&apos;re not just

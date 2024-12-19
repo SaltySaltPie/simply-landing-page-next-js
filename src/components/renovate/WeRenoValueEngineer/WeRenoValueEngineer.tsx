@@ -10,7 +10,7 @@ export const WeRenoValueEngineer = () => {
          <div>
             <Image alt="" src={icons_we_renovate.question.trimEnd()} width={300} height={200} quality={100} />
          </div>
-         <h1>What is Value-Engineered Renovation?</h1>
+         <h2>What is Value-Engineered Renovation?</h2>
          <p>
             Value-Engineered Renovation is a proprietary approach to property improvement that prioritizes both
             affordability and high standards while maximizing the long-term impact on communities.
