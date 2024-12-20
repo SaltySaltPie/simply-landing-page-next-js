@@ -9,6 +9,7 @@ export const WeRentWho = () => {
    const [expand, setExpand] = useState(false);
    return (
       <div className={`${styles.contentC}`}>
+         <h2>Who do we rent to?</h2>
          <div className={`${styles.content}`}>
             <h2>Who do we rent to?</h2>
 
@@ -35,23 +36,21 @@ export const WeRentWho = () => {
                      </p>
                   </>
                )}
+               <div className={`${styles.expand}`} onClick={() => setExpand(!expand)}>
+                  {expand ? "Read Less" : "Read More"}
+                  <Image
+                     src={expand ? icons_we_renovate.why.less.trimEnd() : icons_we_renovate.why.more.trimEnd()}
+                     alt=""
+                     width={18}
+                     height={18}
+                     sizes="100vw"
+                  />
+               </div>
             </Text>
-
-            <div className={`${styles.expand}`} onClick={() => setExpand(!expand)}>
-               {expand ? "Read Less" : "Read More"}
-               <Image
-                  src={expand ? icons_we_renovate.why.less.trimEnd() : icons_we_renovate.why.more.trimEnd()}
-                  alt=""
-                  width={18}
-                  height={18}
-                  sizes="100vw"
-               />
-            </div>
          </div>
-         <div
-            className={`${styles.banner} ${expand && styles.active}`}
-            style={{ backgroundImage: `url(${icons_we_rent.who.who})` }}
-         ></div>
+         <div className={`${styles.banner}`}>
+            <Image src={icons_we_rent.who.who.trimEnd()} alt="" width={200} height={200} sizes="100vw" />
+         </div>
       </div>
    );
 };

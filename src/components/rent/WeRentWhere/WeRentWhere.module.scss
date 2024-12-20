@@ -32,9 +32,14 @@
    }
    .content {
       gap: 5rem;
+      width: 100%;
+      max-width: 50rem;
+      // max-height: 40.3125rem;
+      // min-height: 28.3125rem;
       > img {
          width: 100%;
-         height: 28.3125rem;
+         height: auto;
+         object-fit: contain;
       }
       .neighborhood {
          display: flex;
@@ -59,12 +64,8 @@
    }
 }
 
-@media (max-width: 870px) {
+@media (max-width: 834px) {
    .contentC {
-      display: flex;
       padding: 5rem;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
    }
 }

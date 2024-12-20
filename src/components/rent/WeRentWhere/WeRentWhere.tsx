@@ -18,14 +18,7 @@ export const WeRentWhere = () => {
             ))}
          </div>
          <div key={show} className={`${styles.content}`}>
-            <Image
-               alt=""
-               src={locations[show].picture.trimEnd()}
-               width={300}
-               height={200}
-               quality={100}
-               sizes="100vw"
-            />
+            <Image alt="" src={locations[show].picture.trimEnd()} width={300} height={200} sizes="100vw" />
          </div>
       </div>
    );
