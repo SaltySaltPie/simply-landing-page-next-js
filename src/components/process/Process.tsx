@@ -15,7 +15,7 @@ export const Process = ({ steps, header, type }: ProcessProps) => {
    return (
       <div className={`${styles.contentC}`}>
          <h2 className={styles.title}>{header}</h2>
-         <div className={styles.processC}>
+         <div className={`${styles.processC} ${type === "collapse" && styles.collapseC}`}>
             <div className={styles.process}>
                {steps.map(({ title }, i) => (
                   <div key={i} className={`${styles.stepsC}`}>
@@ -40,7 +40,7 @@ export const Process = ({ steps, header, type }: ProcessProps) => {
             </div>
             <div className={styles.stepsMobile}>
                {steps.map(({ title, content, image }, i) => (
-                  <div className={`${styles.stepsC} ${show === i && styles.active}`} key={i}>
+                  <div className={`${styles.stepsC} ${show === i && styles.active} `} key={i}>
                      <button
                         onClick={() => setShow(i)}
                         className={`${styles.steps} ${type === "collapse" && styles.collapse} ${
