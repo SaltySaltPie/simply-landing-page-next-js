@@ -48,6 +48,7 @@
             > b {
                color: var(--base-white, #fff);
                white-space: nowrap;
+               font-size: 1.63331rem;
             }
          }
          .propertyImg {
@@ -68,8 +69,11 @@
                   align-items: center;
                   gap: 1rem;
                   white-space: nowrap;
+                  > h1 {
+                     font-size: 3.26669rem;
+                  }
                   > span {
-                     font-size: 1.5rem;
+                     font-size: 1.63331rem;
                   }
                }
                .bedroomImg {
@@ -103,6 +107,9 @@
                      display: flex;
                      gap: 1rem;
                      align-items: center;
+                     > h4 {
+                        font-size: 1.63331rem;
+                     }
                   }
                }
             }
@@ -117,17 +124,17 @@
          .properties {
             .propertyImg {
                .bedroom {
-                  width: 18rem;
+                  width: 19.5rem;
                }
                .locationC {
-                  width: 18rem;
+                  width: 19.5rem;
                }
             }
          }
       }
    }
 }
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
    .contentC {
       .content {
          flex-direction: column-reverse;
@@ -155,7 +162,6 @@
       }
    }
 }
-
 @media (max-width: 800px) {
    .contentC {
       padding: 5rem 1.5rem;
@@ -198,8 +204,11 @@
                      display: flex;
                      align-items: center;
                      gap: 0.5rem;
+                      > h1 {
+                        font-size: 1.58956rem;
+                     }
                      > span {
-                        font-size: 1.2rem;
+                        font-size: 0.79481rem;
                      }
                   }
                   .bedroomImg {
@@ -216,7 +225,6 @@
                   width: 15rem;
                   height: 22rem;
                   border-radius: 0.5rem;
-
                   .locationImg {
                      > img {
                         border-radius: 0.34063rem;
@@ -230,6 +238,9 @@
                         > img {
                            width: 1.25rem;
                            height: 1.25rem;
+                        }
+                        > h4 {
+                          font-size: 0.79481rem;
                         }
                      }
                   }
@@ -251,6 +262,7 @@
                .bedroom {
                   flex: 1 0 0;
                   width: 100%;
+                  height: 20rem;
                   .bedroomImg {
                      width: 100%;
                   }
@@ -258,6 +270,7 @@
                .locationC {
                   flex: 1 0 0;
                   width: 100%;
+                  height: 20rem;
                   .locationImg {
                      width: 100%;
                      > img {
