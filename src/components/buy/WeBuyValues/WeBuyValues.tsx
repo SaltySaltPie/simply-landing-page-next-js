@@ -23,12 +23,20 @@ export const WeBuyValues = () => {
             </div>
             <div className={`${styles.properties}`}>
                <div className={`${styles.type}`}>
-                  <Image src={icons_we_buy.value.house_white.trimEnd()} alt="" width={37} height={37} />
-                  <Image src={icons_we_buy.value.doc.trimEnd()} alt="" width={12} height={12} />
+                  <div className={`${styles.houseIcon}`}>
+                     <Image src={icons_we_buy.value.house_white.trimEnd()} alt="" fill />
+                  </div>
+                  <div className={`${styles.dot}`}>
+                     <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
+                  </div>
                   <b>Single family</b>
-                  <Image src={icons_we_buy.value.doc.trimEnd()} alt="" width={12} height={12} />
+                  <div className={`${styles.dot}`}>
+                     <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
+                  </div>
                   <b>Duplexes</b>
-                  <Image src={icons_we_buy.value.doc.trimEnd()} alt="" width={12} height={12} />
+                  <div className={`${styles.dot}`}>
+                     <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
+                  </div>
                   <b>Triplexes</b>
                </div>
                <div className={`${styles.propertyImg}`}>
