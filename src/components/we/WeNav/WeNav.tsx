@@ -12,27 +12,21 @@ export const WeNav = () => {
    const { navItems } = useNavItems();
    const { content } = useContent();
    const [showMobileNav, setShowMobileNav] = useState(false);
-   const [active, setActive] = useState("/");
 
-   const handleNavClick = (href: string) => {
-      setActive(href);
+   const handleNavClick = () => {
       setShowMobileNav(false);
    };
-
-   console.log("active", active);
-   console.log("navItems", navItems);
-   console.log("path", path);
 
    return (
       <nav className={`${styles.contentC}`}>
          <div className={`${styles.content}`}>
-            <div className={`${styles.logoC}`}>
+            <Link className={`${styles.logoC}`} href={"/"}>
                <Image src={icons.nav.logo.trimEnd()} alt="" width={24} height={24} sizes="100vw" />
-            </div>
+            </Link>
             <ul className={`${styles.navItems} ${showMobileNav && styles.showMobileNav}`}>
                {navItems.map((item, i) => (
                   <li key={item.title + i} className={`${item.href === path ? styles.active : ""}`}>
-                     <Link href={item.href} onClick={() => handleNavClick(item.href)}>
+                     <Link href={item.href} onClick={() => handleNavClick()}>
                         {item.title}
                      </Link>
                   </li>

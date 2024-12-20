@@ -1,16 +1,17 @@
 import Image from "next/image";
 import styles from "./WeCTA.module.scss";
 import { icons_we } from "@/utils/icon";
+import { Text } from "@/components/common/text/Text";
 
 export const WeCTA = () => {
    return (
       <div className={`${styles.contentC}`}>
          <div className={`${styles.content}`}>
             <div className={`${styles.cta}`}>
-               <h2>Ready to Sell?</h2>
-               <span>Give us just 30 seconds and we&apos;ll give you a Simply Homes Instant Offer.</span>
+               <Text type="f2B">Ready to Sell?</Text>
+               <Text type="f1-125">Give us just 30 seconds and we&apos;ll give you a Simply Homes Instant Offer.</Text>
                <button type="button">
-                  <h5>Get an Offer</h5>
+                  <Text type="f1-125BNoScale">Get an Offer</Text>
                </button>
             </div>
 

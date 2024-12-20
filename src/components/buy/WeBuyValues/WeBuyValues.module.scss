@@ -1,5 +1,4 @@
 .contentC {
-   font-size: 1.125rem;
    display: flex;
    flex-direction: column;
    gap: 3rem;
@@ -48,7 +47,6 @@
             > h3 {
                color: var(--base-white, #fff);
                white-space: nowrap;
-               // font-size: 1.63331rem;
             }
          }
          .propertyImg {
@@ -69,12 +67,6 @@
                   align-items: center;
                   gap: 1rem;
                   white-space: nowrap;
-                  > h1 {
-                     // font-size: 3.26669rem;
-                  }
-                  > span {
-                     font-size: 1.63331rem;
-                  }
                }
                .bedroomImg {
                   flex: 1 0 0;
@@ -107,9 +99,6 @@
                      display: flex;
                      gap: 1rem;
                      align-items: center;
-                     > h4 {
-                        font-size: 1.63331rem;
-                     }
                   }
                }
             }
@@ -188,9 +177,6 @@
                   width: 0.34063rem;
                   height: 0.34063rem;
                }
-               > h3 {
-                  font-size: 0.79481rem;
-               }
             }
             .propertyImg {
                gap: 0.45rem;
@@ -204,12 +190,6 @@
                      display: flex;
                      align-items: center;
                      gap: 0.5rem;
-                      > h1 {
-                        font-size: 1.58956rem;
-                     }
-                     > span {
-                        font-size: 0.79481rem;
-                     }
                   }
                   .bedroomImg {
                      width: 100%;
@@ -238,9 +218,6 @@
                         > img {
                            width: 1.25rem;
                            height: 1.25rem;
-                        }
-                        > h4 {
-                          font-size: 0.79481rem;
                         }
                      }
                   }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "./WeRentWho.module.scss";
 import { icons_we_renovate, icons_we_rent } from "@/utils/icon";
+import { Text } from "@/components/common/text/Text";
 
 export const WeRentWho = () => {
    const [expand, setExpand] = useState(false);
@@ -11,7 +12,7 @@ export const WeRentWho = () => {
          <div className={`${styles.content}`}>
             <h2>Who do we rent to?</h2>
 
-            <div className={`${styles.paraC}`}>
+            <Text type="f1-125" className={`${styles.paraC}`}>
                <p>
                   We rent to individuals and families who are looking for more than just a place to live—they seek a
                   home where they can build a better future.
@@ -34,7 +35,7 @@ export const WeRentWho = () => {
                      </p>
                   </>
                )}
-            </div>
+            </Text>
 
             <div className={`${styles.expand}`} onClick={() => setExpand(!expand)}>
                {expand ? "Read Less" : "Read More"}

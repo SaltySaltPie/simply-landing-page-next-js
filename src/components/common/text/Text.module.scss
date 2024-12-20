@@ -12,14 +12,45 @@
    line-height: 140%;
 }
 
-@media screen and (max-width: 800px) {
+.f1-5 {
+   font-size: 1.5rem;
+   line-height: 140%;
+}
+
+.f1-5B {
+   font-size: 1.5rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+
+.f2B {
+   font-size: 2rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+
+.f1-125BNoScale {
+   font-size: 1.125rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+@media screen and (max-width: 834px) {
    .f1-125 {
       font-size: 0.875rem;
    }
    .f1-25 {
-      font-size: 0.97319rem;
+      font-size: 1rem;
    }
    .f1 {
-      font-size: 0.77856rem;
+      font-size: 0.75rem;
+   }
+   .f1-5 {
+      font-size: 1.16788rem;
+   }
+   .f1-5B {
+      font-size: 1.16788rem;
+   }
+   .f2B {
+      font-size: 1.5rem;
    }
 }

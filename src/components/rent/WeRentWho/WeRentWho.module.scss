@@ -1,5 +1,4 @@
 .contentC {
-   font-size: 1.125rem;
    width: 100%;
    display: flex;
    gap: 7rem;
@@ -25,14 +24,14 @@
       background-size: contain;
       &.active {
          height: 50rem;
-         // background-position: top right;
       }
    }
 }
 .expand {
-   font-size: 1.125rem;
+   cursor: pointer;
    color: var(--info-500, #295bff);
    display: flex;
+   align-items: center;
    gap: 0.25rem;
    > img {
       filter: brightness(0) saturate(100%) invert(36%) sepia(99%) saturate(4443%) hue-rotate(222deg) brightness(99%)
@@ -43,7 +42,6 @@
    .contentC {
       .content {
          justify-content: start;
-         // padding-top: 4rem;
       }
       .banner {
          height: 30rem;
@@ -58,13 +56,9 @@
       gap: 1rem;
       .content {
          padding-left: 4rem;
-         > h1 {
-            font-size: 40px;
-         }
       }
       .banner {
          background-position: top right;
-
          background-size: cover;
          &.active {
             height: 40rem;
@@ -98,9 +92,6 @@
       gap: 1.5rem;
       .content {
          padding: 0 5rem;
-         > h1 {
-            font-size: 24px;
-         }
       }
       .banner {
          height: 30rem;

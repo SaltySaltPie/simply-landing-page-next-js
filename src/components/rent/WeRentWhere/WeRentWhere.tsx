@@ -3,6 +3,7 @@ import { icons_we_rent } from "@/utils/icon";
 import styles from "./WeRentWhere.module.scss";
 import Image from "next/image";
 import { useState } from "react";
+import { Text } from "@/components/common/text/Text";
 export const WeRentWhere = () => {
    const [show, setShow] = useState<number>(0);
 
@@ -12,12 +13,19 @@ export const WeRentWhere = () => {
          <div className={`${styles.location}`}>
             {locations.map(({ location }, i) => (
                <button type="button" key={i} onClick={() => setShow(i)} className={`${show === i && styles.active}`}>
-                  {location}
+                  <Text type="f1">{location}</Text>
                </button>
             ))}
          </div>
          <div key={show} className={`${styles.content}`}>
-            <Image alt="" src={locations[show].picture.trimEnd()} width={300} height={200} quality={100} sizes="100vw" />
+            <Image
+               alt=""
+               src={locations[show].picture.trimEnd()}
+               width={300}
+               height={200}
+               quality={100}
+               sizes="100vw"
+            />
          </div>
       </div>
    );

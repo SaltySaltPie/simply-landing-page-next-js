@@ -3,6 +3,7 @@ import styles from "./Process.module.scss";
 import Image from "next/image";
 import { useState } from "react";
 import { icons_we, icons_we_renovate } from "@/utils/icon";
+import { Text } from "../common/text/Text";
 
 type ProcessProps = {
    steps: TStep[];
@@ -32,7 +33,7 @@ export const Process = ({ steps, header, type }: ProcessProps) => {
                               />
                            </div>
                         )}
-                        <span>{title}</span>
+                        <Text type="f1-125">{title}</Text>
                      </button>
                   </div>
                ))}
@@ -59,7 +60,7 @@ export const Process = ({ steps, header, type }: ProcessProps) => {
                               />
                            </div>
                         )}
-                        <span>{title}</span>
+                        <Text type="f1-125">{title}</Text>
                         {type === "expand" && (
                            <div className={`${styles.icon}`}>
                               <Image
@@ -75,7 +76,7 @@ export const Process = ({ steps, header, type }: ProcessProps) => {
                         )}
                      </button>
                      <div className={`${styles.description} ${show === i ? styles.active : ""}`}>
-                        <span>{content}</span>
+                        <Text type="f1-125">{content}</Text>
                         <div className={styles.stepsImg}>
                            {image && <Image alt={title} src={image.trimEnd()} width={300} height={200} sizes="100vw" />}
                         </div>
