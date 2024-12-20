@@ -23,10 +23,9 @@ export const WeBuyHero = () => {
                </div>
                <div className={`${styles.discover}`}>Discover if we&rsquo;re in your neighborhood!</div>
             </div>
-            <div
-               className={`${styles.background}`}
-               style={{ backgroundImage: `url(${icons_we_buy.hero.banner})` }}
-            ></div>
+            <div className={`${styles.background}`}>
+               <Image src={icons_we_buy.hero.banner} alt="" fill />
+            </div>
          </div>
          <div className={`${styles.itemC}`}>
             {items.map((item, index) => (

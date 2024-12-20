@@ -56,8 +56,11 @@
       .background {
          flex: 1 0 0;
          height: 100%;
-         background-repeat: no-repeat;
-         background-position: center right;
+         position: relative;
+         z-index: 2;
+         > img {
+            object-fit: cover;
+         }
       }
    }
    .itemC {
@@ -66,7 +69,7 @@
       justify-content: center;
       gap: 1.5rem;
       height: 10rem;
-
+      z-index: 1;
       .item {
          margin-top: -7rem;
          display: flex;
