@@ -73,6 +73,7 @@
 }
 @media (max-width: 834px) {
    .heroC {
+         padding-top: 4rem;
       padding: 0;
       .title {
          .heading {
@@ -82,9 +83,10 @@
    }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 555px) {
    .heroC {
       .title {
+         padding-top: 4.31rem;
         .heading {
             gap: 1.5rem;
          }
