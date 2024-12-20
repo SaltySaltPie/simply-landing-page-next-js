@@ -6,25 +6,27 @@ import Image from "next/image";
 export const WeBuyHero = () => {
    return (
       <div className={`${styles.contentC}`}>
-         <div className={`${styles.heading}`}>
-            <div className={`${styles.content}`}>
-               <div className={`${styles.description}`}>
-                  <h1>Because selling as-is should be simple.</h1>
-                  <span>
-                     We purchase single-family homes in strong communities from people who deserve fairness,
-                     transparency, and respect, especially during challenging times.
-                  </span>
-               </div>
-               <div className={`${styles.searchBox}`}>
-                  <input type="text" placeholder="Enter your property address" />
-                  <div className={`${styles.searchBtn}`}>
-                     <Image src={icons.header.arrow_forward.trimEnd()} alt="" width={20} height={20} />
+         <div className={`${styles.headingC}`}>
+            <div className={`${styles.heading}`}>
+               <div className={`${styles.content}`}>
+                  <div className={`${styles.description}`}>
+                     <h1>Because selling as-is should be simple.</h1>
+                     <span>
+                        We purchase single-family homes in strong communities from people who deserve fairness,
+                        transparency, and respect, especially during challenging times.
+                     </span>
                   </div>
+                  <div className={`${styles.searchBox}`}>
+                     <input type="text" placeholder="Enter your property address" />
+                     <div className={`${styles.searchBtn}`}>
+                        <Image src={icons.header.arrow_forward.trimEnd()} alt="" width={20} height={20} />
+                     </div>
+                  </div>
+                  <div className={`${styles.discover}`}>Discover if we&rsquo;re in your neighborhood!</div>
                </div>
-               <div className={`${styles.discover}`}>Discover if we&rsquo;re in your neighborhood!</div>
-            </div>
-            <div className={`${styles.background}`}>
-               <Image src={icons_we_buy.hero.banner} alt="" fill />
+               <div className={`${styles.background}`}>
+                  <Image src={icons_we_buy.hero.banner} alt="" fill sizes="100vw" />
+               </div>
             </div>
          </div>
          <div className={`${styles.itemC}`}>

@@ -6,8 +6,8 @@
       background: var(--Secondary-Mint, #d2f9e1);
       overflow: hidden;
       position: relative;
-      // max-width: 90rem;
       margin: auto;
+      display: flex;
       .cta {
          display: flex;
          flex-direction: column;
@@ -18,7 +18,7 @@
          left: 50%;
          transform: translateX(-50%);
          > h2 {
-            font-size: 2rem;
+            // font-size: 2rem;
             text-align: center;
             padding: 0 0.5rem;
          }
@@ -46,32 +46,58 @@
 }
 @media (max-width: 1440px) {
    .contentC {
-      // padding: 5rem;
       .content {
+         height: 26.625rem;
+         .cta {
+            gap: 0.5rem;
+            top: 3rem;
+            > span {
+               max-width: 20rem;
+            }
+         }
+         .img {
+            object-fit: cover;
+         }
       }
    }
 }
-// @media (max-width: 834px) {
-//    .contentC {
-//       padding: 5rem;
-//       .content {
-//          gap: 1.5rem;
-//          .titleC {
-//             gap: 0.5rem;
-//             > h2 {
-//                font-size: 1.5rem;
-//             }
-//             > span {
-//                width: 18.4375rem;
-//                font-size: 0.875rem;
-//             }
-//          }
-//          height: 24.625rem;
-//          .backgroundImg {
-//             > img {
-//                object-fit: cover;
-//             }
-//          }
-//       }
-//    }
-// }
+@media (max-width: 834px) {
+   .contentC {
+      padding: 5rem;
+      .content {
+         gap: 1.5rem;
+         .titleC {
+            gap: 0.5rem;
+            > h2 {
+               font-size: 1.5rem;
+            }
+            > span {
+               font-size: 0.875rem;
+            }
+         }
+         
+      }
+   }
+}
+
+@media (max-width: 555px) {
+   .contentC {
+      padding: 5rem 1.5rem;
+      .content {
+         gap: 1.5rem;
+         .cta {
+            top: 3.19rem;
+            > h2 {
+               // font-size: 1.5rem;
+            }
+            > span {
+               // font-size: 0.875rem;
+               // max-width: 23.4375rem;
+            }
+            > button {
+               height: 3.5rem;
+            }
+         }
+      }
+   }
+}
