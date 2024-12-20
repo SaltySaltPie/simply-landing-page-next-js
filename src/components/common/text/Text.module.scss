@@ -1,13 +1,25 @@
-.text {
-}
-
 .f1-125 {
    font-size: 1.125rem;
+   line-height: 140%;
+}
+.f1-25 {
+   font-size: 1.25rem;
+   line-height: 140%;
+}
+
+.f1 {
+   font-size: 1rem;
    line-height: 140%;
 }
 
 @media screen and (max-width: 800px) {
    .f1-125 {
-      font-size: 1rem;
+      font-size: 0.875rem;
+   }
+   .f1-25 {
+      font-size: 0.97319rem;
+   }
+   .f1 {
+      font-size: 0.77856rem;
    }
 }

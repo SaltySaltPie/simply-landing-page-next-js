@@ -1,6 +1,4 @@
 .contentC {
-   font-size: 1.125rem;
-
    .headingC {
       padding-left: 8rem;
       border-radius: 0rem 0rem 5rem 5rem;
@@ -106,7 +104,7 @@
             width: 21rem;
             white-space: nowrap;
          }
-         > span {
+         > p {
             width: 43.4375rem;
             > b {
                font-style: italic;
@@ -126,7 +124,7 @@
       .desC {
          .des {
             gap: 7rem;
-            > span {
+            > p {
                max-width: 30rem;
             }
          }
@@ -206,7 +204,7 @@
          .des {
             flex-direction: column;
             gap: 0.75rem;
-             > span {
+            > span {
                max-width: 30rem;
             }
          }
@@ -255,7 +253,7 @@
             > h2 {
                width: 100%;
             }
-            > span {
+            > p {
                width: 100%;
             }
          }

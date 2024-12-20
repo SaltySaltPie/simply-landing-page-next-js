@@ -1,9 +1,10 @@
 import styles from "./Text.module.scss";
-export const Text = ({ children, type }: TTextProps) => {
-   return <p className={`${styles.text} ${styles[type]}`}>{children}</p>;
+export const Text = ({ children, type, className }: TTextProps) => {
+   return <p className={`${styles.text} ${styles[type]} ${className}`}>{children}</p>;
 };
 
 type TTextProps = {
    children: React.ReactNode;
-   type: "f1-125";
+   className?: string;
+   type: "f1-125" | "f1-25" | "f1";
 };

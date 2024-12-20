@@ -5,12 +5,16 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { icons, icons_we_buy } from "@/utils/icon";
 import { CustomCarousel } from "@/components/common/customCarousel/CustomCarousel";
+import { Text } from "@/components/common/text/Text";
+
 export const WeBuyProperties = () => {
    return (
       <div className={`${styles.contentC}`} id="properties">
          <div className={`${styles.title}`}>
             <h2>Recently purchased homes</h2>
-            <span>Still not sure if we are a fit? See here some of the properties we have bought recently</span>
+            <Text type="f1-125">
+               Still not sure if we are a fit? See here some of the properties we have bought recently
+            </Text>
          </div>
          <CustomCarousel
             responsive={responsive}
@@ -36,9 +40,11 @@ export const WeBuyProperties = () => {
                      <Image alt="" src={icons_we_buy.property["person"].trimEnd()} width={32} height={32} />
                      <h4>Shanta P.</h4>
                      <hr />
-                     <span>Seller</span>
+                     <Text type="f1-25">Seller</Text>
                   </div>
-                  <div className={`${styles.reason}`}>[Showing why Simply buy this property]</div>
+                  <Text type="f1" className={`${styles.reason}`}>
+                     [Showing why Simply buy this property]
+                  </Text>
                </div>
             ))}
          </CustomCarousel>
