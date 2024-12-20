@@ -10,15 +10,20 @@
       text-align: center;
       align-items: center;
       gap: 1.5rem;
-      h3 {
-         text-align: center;
-         text-transform: uppercase;
-         font-weight: 200;
-      }
-      h1 {
-         text-align: center;
-         width: min(43rem, 90%);
-         line-height: 3.5rem;
+      .heading {
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+         h3 {
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 200;
+         }
+         h1 {
+            text-align: center;
+            width: min(43rem, 90%);
+            line-height: 3.5rem;
+         }
       }
       .searchC {
          width: min(40rem, 80%);
@@ -67,13 +72,20 @@
 @media (max-width: 834px) {
    .heroC {
       padding: 0;
+      .title {
+         .heading {
+            gap: 0.75rem;
+         }
+      }
    }
 }
 
 @media (max-width: 810px) {
    .heroC {
       .title {
-         gap: 0.75rem;
+        .heading {
+            gap: 1.5rem;
+         }
       }
       .banner {
          height: 20.375rem;

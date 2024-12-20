@@ -18,8 +18,10 @@ export const WeHero = () => {
          // style={{ backgroundImage: `url(${icons_we.hero.banner})` }}
       >
          <div className={`${styles.title}`}>
-            <h3>{subtitle}</h3>
-            <h1>{title}</h1>
+            <div className={`${styles.heading}`}>
+               <h3>{subtitle}</h3>
+               <h1>{title}</h1>
+            </div>
             <div className={`${styles.searchC}`}>
                <input type="text" placeholder="Enter your property address" />
                <div className={`${styles.searchIcon}`}>
