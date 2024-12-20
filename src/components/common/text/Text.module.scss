@@ -1,0 +1,13 @@
+.text {
+}
+
+.f1-125 {
+   font-size: 1.125rem;
+   line-height: 140%;
+}
+
+@media screen and (max-width: 800px) {
+   .f1-125 {
+      font-size: 1rem;
+   }
+}
