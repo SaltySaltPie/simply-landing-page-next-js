@@ -29,15 +29,15 @@ export const WeBuyValues = () => {
                   <div className={`${styles.dot}`}>
                      <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
                   </div>
-                  <b>Single family</b>
+                  <h3>Single family</h3>
                   <div className={`${styles.dot}`}>
                      <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
                   </div>
-                  <b>Duplexes</b>
+                  <h3>Duplexes</h3>
                   <div className={`${styles.dot}`}>
                      <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
                   </div>
-                  <b>Triplexes</b>
+                  <h3>Triplexes</h3>
                </div>
                <div className={`${styles.propertyImg}`}>
                   <div className={`${styles.bedroom}`}>

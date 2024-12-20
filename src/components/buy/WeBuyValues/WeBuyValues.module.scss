@@ -45,10 +45,10 @@
                width: 0.7rem;
                height: 0.7rem;
             }
-            > b {
+            > h3 {
                color: var(--base-white, #fff);
                white-space: nowrap;
-               font-size: 1.63331rem;
+               // font-size: 1.63331rem;
             }
          }
          .propertyImg {
@@ -70,7 +70,7 @@
                   gap: 1rem;
                   white-space: nowrap;
                   > h1 {
-                     font-size: 3.26669rem;
+                     // font-size: 3.26669rem;
                   }
                   > span {
                      font-size: 1.63331rem;
@@ -162,7 +162,7 @@
       }
    }
 }
-@media (max-width: 800px) {
+@media (max-width: 834px) {
    .contentC {
       padding: 5rem 1.5rem;
       .content {
@@ -188,7 +188,7 @@
                   width: 0.34063rem;
                   height: 0.34063rem;
                }
-               > b {
+               > h3 {
                   font-size: 0.79481rem;
                }
             }
