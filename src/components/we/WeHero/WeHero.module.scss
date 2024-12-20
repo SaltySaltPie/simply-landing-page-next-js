@@ -1,7 +1,7 @@
 .heroC {
    width: 100%;
    margin-top: 4rem;
-   padding: 0 8rem;
+   // padding: 0 8rem;
    background: var(--Primary-Sun, #ffe39b);
    .title {
       padding-top: 5rem;
@@ -11,8 +11,11 @@
       align-items: center;
       gap: 1.5rem;
       .heading {
+         width: 100%;
          display: flex;
          flex-direction: column;
+         justify-content: center;
+         align-items: center;
          gap: 1rem;
          h3 {
             text-align: center;
@@ -22,7 +25,6 @@
          h1 {
             text-align: center;
             width: min(43rem, 90%);
-            line-height: 3.5rem;
          }
       }
       .searchC {
