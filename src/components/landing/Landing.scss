@@ -1,0 +1,91 @@
+h1 {
+   font-size: 3rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+h2 {
+   font-size: 2.1875rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+h3 {
+   font-size: 1.5rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+h4 {
+   font-size: 1.25rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+h5 {
+   font-size: 1.125rem;
+   font-weight: bold;
+   line-height: 140%;
+}
+.t1 {
+   font-size: 1rem;
+   line-height: 140%;
+}
+.t2 {
+   font-size: 0.875rem;
+   line-height: 140%;
+}
+@media (max-width: 800px) {
+   h1 {
+      font-size: 2.5rem;
+   }
+
+   h2 {
+      font-size: 1.5rem;
+   }
+
+   h3 {
+      font-size: 1.25rem;
+   }
+
+   h4 {
+      font-size: 1rem;
+   }
+
+   h5 {
+      font-size: 1rem;
+   }
+
+   .t1 {
+      font-size: 1rem;
+   }
+
+   .t2 {
+      font-size: 0.75rem;
+   }
+}
+@media (max-width: 500px) {
+   h1 {
+      font-size: 1.75rem;
+   }
+
+   h2 {
+      font-size: 1.5rem;
+   }
+
+   h3 {
+      font-size: 1.25rem;
+   }
+
+   h4 {
+      font-size: 1rem;
+   }
+
+   h5 {
+      font-size: 1rem;
+   }
+
+   .t1 {
+      font-size: 1rem;
+   }
+
+   .t2 {
+      font-size: 0.75rem;
+   }
+}

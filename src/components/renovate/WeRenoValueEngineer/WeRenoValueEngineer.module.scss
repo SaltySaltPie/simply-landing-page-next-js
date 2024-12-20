@@ -1,5 +1,4 @@
 .contentC {
-   font-size: 1.125rem;
    width: 100%;
    display: flex;
    padding: 5rem 8rem;
@@ -15,11 +14,9 @@
       }
    }
    > h2 {
-      font-size: 2.1875rem;
       text-align: center;
    }
    > p {
-      font-size: 1.25rem;
       text-align: center;
    }
 }
@@ -31,8 +28,5 @@
 @media (max-width: 1145px) {
    .contentC {
       padding: 5rem 1rem;
-      > h1 {
-         font-size: 24px;
-      }
    }
 }

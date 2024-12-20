@@ -4,6 +4,7 @@ import styles from "./WeRenoWhy.module.scss";
 import Image from "next/image";
 
 import { useState } from "react";
+import { Text } from "@/components/common/text/Text";
 
 export const WeRenoWhy = () => {
    const [expand, setExpand] = useState(false);
@@ -15,28 +16,28 @@ export const WeRenoWhy = () => {
          ></div>
          <div className={`${styles.content}`}>
             <h2>Why We Renovate?</h2>
-            <p>
+            <Text type="f1-125">
                Real estate is built on long-term commitments and stability, and our approach to renovations reflects
                this by investing in homes with a focus on lasting impact. When we invest in a house, we&apos;re not just
                buying a property—we&apos;re making a long-term commitment to a family and to a community.
-            </p>
+            </Text>
             {expand && (
                <>
-                  <p>
+                  <Text type="f1-125">
                      We are driven by the need to value-engineer homes that exceed modern standards while still
                      affordable to those who need them the most. Through thoughtful renovations, we create homes that
                      are not just livable but desirable, fostering a sense of security, comfort, and pride among our
                      tenants. We firmly believe that this commitment to excellence brings long-lasting value and
                      rejuvenates the fabric of strong communities.
-                  </p>
-                  <p>
+                  </Text>
+                  <Text type="f1-125">
                      At the core of our renovation commitment is creating homes that provide comfort, security, and a
                      place where people can build lasting memories.
-                  </p>
+                  </Text>
                </>
             )}
             <div className={`${styles.expand}`} onClick={() => setExpand(!expand)}>
-               {expand ? "Read Less" : "Read More"}
+               <Text type="f1-125">{expand ? "Read Less" : "Read More"}</Text>
                <Image
                   src={expand ? icons_we_renovate.why.less.trimEnd() : icons_we_renovate.why.more.trimEnd()}
                   alt=""

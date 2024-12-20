@@ -6,10 +6,10 @@ import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import { icons } from "@/utils/icon";
 import { CustomCarousel } from "@/components/common/customCarousel/CustomCarousel";
+import { Text } from "@/components/common/text/Text";
 export const WeRenoProperties = () => {
    const { properties } = useContent().content;
    if (!properties) return null;
-   // const { title, locations } = properties;
 
    return (
       <div className={`${styles.contentC}`} id="properties">
@@ -20,7 +20,6 @@ export const WeRenoProperties = () => {
             arrows
             removeArrowOnDeviceType={["tablet", "mobile"]}
             showDots
-            // autoPlay
             infinite
          >
             {locations.map(({ location, photo }, index) => (
@@ -45,7 +44,7 @@ export const WeRenoProperties = () => {
                      </div>
                      <h3>{location}</h3>
                   </div>
-                  <span>Explain briefly exceeded standards</span>
+                  <Text type="f1">Explain briefly exceeded standards</Text>
                </div>
             ))}
          </CustomCarousel>
