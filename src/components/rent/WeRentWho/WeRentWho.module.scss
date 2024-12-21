@@ -8,10 +8,10 @@
       display: none;
    }
    .content {
-      width: 35rem;
-      padding-top: 9.56rem;
+      max-width: 40rem;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       gap: 1.5rem;
       .paraC {
          display: flex;
@@ -25,9 +25,9 @@
 
       > img {
          width: 100%;
-         height: auto;
+         height: 100%;
          object-fit: contain;
-         object-position: top right;
+         object-position: top left;
       }
    }
 }
@@ -45,7 +45,7 @@
 @media (max-width: 1440px) {
    .contentC {
       .content {
-         width: 30rem;
+         max-width: 30rem;
          .paraC {
             max-width: 100%;
          }
@@ -55,53 +55,60 @@
       }
    }
 }
-@media (max-width: 1350px) {
+@media (max-width: 1130px) {
    .contentC {
       gap: 3rem;
+      padding-left: 3rem;
       .content {
          padding-top: 0rem;
-         width: 25rem;
+         max-width: 22rem;
       }
    }
 }
-@media (max-width: 1100px) {
+@media (max-width: 834px) {
    .contentC {
       flex-direction: column;
       gap: 3rem;
       padding: 5rem 0;
       .content {
-         width: 100%;
+         max-width: 100%;
          padding: 0 5rem;
+         > h2 {
+            text-align: center;
+         }
          .paraC {
             gap: 1rem;
-            > h2 {
-               padding-bottom: 2rem;
-               text-align: center;
-            }
          }
       }
       .banner {
          width: 100%;
+         padding-left: 5rem;
       }
    }
 }
 @media (max-width: 555px) {
    .contentC {
       width: 100%;
+      padding-bottom: 8.12rem;
+      gap: 1rem;
+      flex-direction: column;
+
       > h2 {
          display: block;
          text-align: center;
+         padding-bottom: 2rem;
       }
-      flex-direction: column;
       .content {
          order: 3;
-         padding: 0 2rem;
+         padding: 0 1.5rem;
          > h2 {
             display: none;
          }
       }
       .banner {
          order: 2;
+         padding-left: 0;
+         background: var(--Secondary-Mint, #d2f9e1);
       }
    }
 }

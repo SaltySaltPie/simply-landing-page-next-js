@@ -2,6 +2,7 @@
 import { icons_we_renovate } from "@/utils/icon";
 import styles from "./WeRenoHero.module.scss";
 import { Text } from "@/components/common/text/Text";
+import Image from "next/image";
 
 export const WeRenoHero = () => {
    return (
@@ -14,7 +15,9 @@ export const WeRenoHero = () => {
                and history of each community we serve.
             </Text>
          </div>
-         <div className={`${styles.banner}`} style={{ backgroundImage: `url(${icons_we_renovate.hero.banner})` }}></div>
+         <div className={`${styles.banner}`}>
+            <Image src={icons_we_renovate.hero.banner.trimEnd()} alt="" width={200} height={200} sizes="100vw" />
+         </div>
       </div>
    );
 };

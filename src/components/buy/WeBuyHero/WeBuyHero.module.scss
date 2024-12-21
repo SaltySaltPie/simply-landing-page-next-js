@@ -124,6 +124,7 @@
       .desC {
          .des {
             gap: 7rem;
+           
             > p {
                max-width: 30rem;
             }
@@ -131,7 +132,7 @@
       }
    }
 }
-@media (max-width: 1250px) {
+@media (max-width: 1130px) {
    .contentC {
       padding-top: 4rem;
       .headingC {
@@ -157,8 +158,12 @@
          padding: 5rem 3rem;
          .des {
             gap: 3rem;
+             > h2 {
+               white-space: wrap;
+               width: 18rem;
+            }
             > span {
-               max-width: 22rem;
+               max-width: 18rem;
             }
          }
       }

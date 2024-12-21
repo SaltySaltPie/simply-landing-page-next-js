@@ -175,20 +175,11 @@
                   &.active {
                      gap: 0.75rem;
                   }
-
                   .steps {
                      display: flex;
-
-                     .icon {
-                        width: 1.5rem;
-                        height: 1.5rem;
-                        padding: 0.52rem 0.38rem;
-                        position: relative;
-                     }
                      > p {
                         text-align: left;
                      }
-
                      &.collapse {
                         justify-content: flex-start;
                         .icon {
@@ -201,7 +192,7 @@
                   }
                   .description {
                      &.active {
-                        padding-bottom: 2rem;
+                        // padding-bottom: 2rem;
                         gap: 0.75rem;
                         height: auto;
                         width: 100%;
@@ -215,23 +206,25 @@
                }
             }
          }
-         .process {
-            .stepsC {
-               .steps {
-                  max-width: 15rem;
+         &.expandC {
+            .process {
+               .stepsC {
+                  .steps {
+                     max-width: 15rem;
+                  }
                }
             }
-         }
-         .stepsMobile {
-            .description {
-               .stepsImg {
-                  max-width: 22.1rem;
-                  height: 22.2rem;
-                  > img {
-                     width: 100%;
-                     height: 100%;
-                     object-fit: cover;
-                     object-position: -20rem right;
+            .stepsMobile {
+               .description {
+                  .stepsImg {
+                     max-width: 22.1rem;
+                     height: 22.2rem;
+                     > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: -20rem right;
+                     }
                   }
                }
             }
@@ -254,11 +247,12 @@
          .stepsMobile {
             .description {
                .stepsImg {
-                  max-width: 100%;
+                  width: 100%;
                   height: auto;
                   > img {
+                     width: 100%;
                      height: auto;
-                     object-position: right;
+                     // object-position: right;
                   }
                }
             }
@@ -283,21 +277,30 @@
                width: 100%;
                display: flex;
                flex-direction: column;
-               &.active{
+               &.active {
                   gap: 0.75rem;
                }
                .steps {
                   width: -webkit-fill-available;
                   display: flex;
                   margin: 0 1.5rem;
+                  .icon {
+                     width: 1.5rem;
+                     height: 1.5rem;
+                     padding: 0.52rem 0.38rem;
+                     position: relative;
+                  }
                }
                .description {
                   > p {
                      padding: 0 1.5rem;
                   }
                   .stepsImg {
+                     max-width: 100%;
+                     height: 100%;
                      > img {
                         border-radius: 0;
+                        object-position: center;
                      }
                   }
                }
