@@ -30,15 +30,15 @@ export const WeBuyValues = () => {
                   <div className={`${styles.dot}`}>
                      <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
                   </div>
-                  <h3>Single family</h3>
+                  <Text type="f1-65B">Single family</Text>
                   <div className={`${styles.dot}`}>
                      <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
                   </div>
-                  <h3>Duplexes</h3>
+                  <Text type="f1-65B">Duplexes</Text>
                   <div className={`${styles.dot}`}>
                      <Image src={icons_we_buy.value.doc.trimEnd()} alt="" fill />
                   </div>
-                  <h3>Triplexes</h3>
+                  <Text type="f1-65B">Triplexes</Text>
                </div>
                <div className={`${styles.propertyImg}`}>
                   <div className={`${styles.bedroom}`}>
@@ -56,16 +56,16 @@ export const WeBuyValues = () => {
                      <div className={`${styles.location}`}>
                         <div className={`${styles.item}`}>
                            <Image src={icons_we_buy.value.location.trimEnd()} alt="" width={37} height={37} />
-                           <Text type="f1-5B">Pittsburgh</Text>
+                           <Text type="f1-65B">Pittsburgh</Text>
                         </div>
 
                         <div className={`${styles.item}`}>
                            <Image src={icons_we_buy.value.location.trimEnd()} alt="" width={37} height={37} />
-                           <Text type="f1-5B">Cleveland</Text>
+                           <Text type="f1-65B">Cleveland</Text>
                         </div>
                         <div className={`${styles.item}`}>
                            <Image src={icons_we_buy.value.location.trimEnd()} alt="" width={37} height={37} />
-                           <Text type="f1-5B">Indianapolis</Text>
+                           <Text type="f1-65B">Indianapolis</Text>
                         </div>
                      </div>
                   </div>

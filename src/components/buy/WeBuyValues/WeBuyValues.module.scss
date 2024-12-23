@@ -44,7 +44,7 @@
                width: 0.7rem;
                height: 0.7rem;
             }
-            > h3 {
+            > p {
                color: var(--base-white, #fff);
                white-space: nowrap;
             }
@@ -91,7 +91,7 @@
                   }
                }
                .location {
-                  flex: 1 0 0;
+                  // flex: 1 0 0;
                   display: flex;
                   flex-direction: column;
                   gap: 1.4rem;
@@ -125,11 +125,12 @@
 }
 @media (max-width: 1240px) {
    .contentC {
+      padding: 5rem 0rem;
       .content {
          flex-direction: column-reverse;
          gap: 1.5rem;
          .descriptionC {
-            max-width: 80%;
+            max-width: 40rem;
             margin-inline: auto;
             text-align: center;
             gap: 2rem;
@@ -232,23 +233,24 @@
       .content {
          .properties {
             .type {
-               width: 100%;
+               width: 20.45rem;
             }
             .propertyImg {
                width: 100%;
+               justify-content: center;
                .bedroom {
-                  flex: 1 0 0;
-                  width: 100%;
-                  height: 20rem;
+                  width: 10rem;
+                  height: 13rem;
                   .bedroomImg {
                      width: 100%;
                   }
                }
                .locationC {
-                  flex: 1 0 0;
-                  width: 100%;
-                  height: 20rem;
+                 width: 10rem;
+                  height: 13rem;
+                  gap: 0.68rem;
                   .locationImg {
+                     flex: 1 0 0;
                      width: 100%;
                      > img {
                         border-radius: 0.34063rem;

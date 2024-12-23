@@ -101,7 +101,7 @@
       }
    }
    .desC {
-      padding: 5rem 8rem 5.56rem 8rem;
+      padding: 5rem 0rem 5.56rem 0rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -148,12 +148,12 @@
          }
       }
       .desC {
-         padding: 5rem 3rem;
+         padding: 5rem 0rem;
          .des {
             gap: 3rem;
             > h2 {
                white-space: wrap;
-               width: 18rem;
+               width: 21rem;
             }
             > span {
                max-width: 18rem;
@@ -167,7 +167,7 @@
       .headingC {
          min-height: 60rem;
          gap: 1rem;
-         padding: 0 3rem 4.62rem 3rem;
+         padding-bottom: 4.62rem;
          .heading {
             flex-direction: column-reverse;
             gap: 0.7rem;
@@ -187,7 +187,6 @@
                }
             }
             .background {
-               // margin-top: 4rem;
                flex: none;
                background-position: bottom;
                max-height: 30rem;
@@ -225,22 +224,6 @@
          padding-bottom: 2rem;
          min-height: unset;
          height: 42rem;
-         .heading {
-            .content {
-               .searchBox {
-                  // width: 100%;
-               }
-               .discover {
-                  // text-align: center;
-               }
-            }
-            .background {
-               max-height: 20rem;
-               > img {
-                  // object-fit: cover;
-               }
-            }
-         }
       }
       .desC {
          padding: 5rem 1.5rem 0;

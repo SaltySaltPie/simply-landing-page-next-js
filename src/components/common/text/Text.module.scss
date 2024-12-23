@@ -20,8 +20,13 @@
    line-height: 140%;
 }
 
-.f1-5B {
-   font-size: 1.5rem;
+// .f1-5B {
+//    font-size: 1.5rem;
+//    font-weight: bold;
+//    line-height: 140%;
+// }
+.f1-65B {
+   font-size: 1.65rem;
    font-weight: bold;
    line-height: 140%;
 }
@@ -54,10 +59,13 @@
       font-size: 0.75rem;
    }
    .f1-5 {
-      font-size: 1.16788rem;
+      font-size: 0.8rem;
    }
-   .f1-5B {
-      font-size: 1.16788rem;
+   // .f1-5B {
+   //    font-size: 1.16788rem;
+   // }
+   .f1-65B {
+      font-size: 0.8rem;
    }
    .f2B {
       font-size: 1.5rem;
@@ -65,4 +73,7 @@
    .f2-5B {
       font-size: 1.5rem;
    }
+}
+@media screen and (max-width: 555px) {
+
 }
