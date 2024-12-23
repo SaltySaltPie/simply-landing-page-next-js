@@ -1,18 +1,17 @@
-import { useContent } from "@/hooks/useContent";
 import styles from "./LaPaAbout.module.scss";
 import Link from "next/link";
 import Image from "next/image";
 import { CF_CDN_URL } from "@/utils/CF_CDN_URL";
 export const LaPaAbout = () => {
-   const { content } = useContent();
-   const { about } = content;
-   if (!about) return null;
    return (
       <div className={`${styles.contentC}`} id="about-us">
          <div>
             <div className={`${styles.content}`}>
-               {about?.title && <h2>{about.title}</h2>}
-               <Link href={about.link}>
+               <div>
+                  <h2>Learn more about our&nbsp;</h2>
+                  <h2>Simply mission at</h2>
+               </div>
+               <Link href={"/about"}>
                   <h5>About Us</h5>
                </Link>
             </div>

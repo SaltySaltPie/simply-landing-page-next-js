@@ -6,19 +6,28 @@
       height: 45rem;
       width: 100%;
       display: flex;
-      align-items: center;
+      // align-items: center;
       justify-content: center;
       padding-bottom: 2rem;
       .heading {
          max-width: 90rem;
+         width: 100%;
          height: 100%;
          display: flex;
          align-items: center;
-         gap: 4.44rem;
          .content {
+            width: 30rem;
+            flex-shrink: 0;
             .description {
                display: flex;
                flex-direction: column;
+               > div {
+                  display: flex;
+                  flex-wrap: wrap;
+                  > h1 {
+                     white-space: nowrap;
+                  }
+               }
                gap: 1rem;
             }
             .searchBox {
@@ -26,7 +35,6 @@
                margin-bottom: 1rem;
                display: flex;
                justify-content: space-between;
-               width: 30rem;
                height: 3.5rem;
                padding: 0.75rem;
                align-items: center;
@@ -60,12 +68,13 @@
          }
          .background {
             width: 100%;
-            max-width: 52.1875rem;
+            // max-width: 52.1875rem;
+            max-height: 36rem;
             height: 100%;
             position: relative;
             z-index: 2;
             > img {
-               object-fit: cover;
+               object-fit: contain;
             }
          }
       }
@@ -115,16 +124,10 @@
 }
 @media (max-width: 1440px) {
    .contentC {
-      .headingC {
-         .heading {
-            max-height: 45rem;
-            gap: 2rem;
-         }
-      }
       .desC {
          .des {
             gap: 7rem;
-           
+
             > p {
                max-width: 30rem;
             }
@@ -137,20 +140,10 @@
       padding-top: 4rem;
       .headingC {
          padding-left: 5rem;
-         max-height: 35rem;
+         // max-height: 35rem;
          .heading {
             .content {
-               .description {
-                  max-width: 60rem;
-               }
-               .searchBox {
-                  width: 20rem;
-               }
-            }
-            .background {
-               > img {
-                  object-fit: contain;
-               }
+               width: 30rem;
             }
          }
       }
@@ -158,7 +151,7 @@
          padding: 5rem 3rem;
          .des {
             gap: 3rem;
-             > h2 {
+            > h2 {
                white-space: wrap;
                width: 18rem;
             }
@@ -169,11 +162,10 @@
       }
    }
 }
-@media (max-width: 834px) {
+@media (max-width: 1000px) {
    .contentC {
       .headingC {
-         max-height: 60rem;
-         min-height: 50rem;
+         min-height: 60rem;
          gap: 1rem;
          padding: 0 3rem 4.62rem 3rem;
          .heading {
@@ -182,12 +174,20 @@
             .content {
                width: 100%;
                padding: 0;
+               max-width: 34rem;
+               text-align: center;
+               .description {
+                  > div {
+                     flex-direction: column;
+                     align-items: center;
+                  }
+               }
                .searchBox {
-                  width: 30rem;
+                  width: 100%;
                }
             }
             .background {
-               margin-top: 4rem;
+               // margin-top: 4rem;
                flex: none;
                background-position: bottom;
                max-height: 30rem;
@@ -216,37 +216,28 @@
       }
    }
 }
-// @media (max-width: 834px) {
-//    .contentC {
-//       .itemC {
-//          padding-top: 1.5rem;
-//          flex-direction: column;
-//          height: auto;
-//          .item {
-//             margin-top: 0rem;
-//          }
-//       }
-//    }
-// }
 @media (max-width: 555px) {
    .contentC {
       .headingC {
          border-radius: 0rem 0rem 2.5rem 2.5rem;
          gap: 1rem;
-         padding: 0 1.5rem;
+         padding-inline: 1.5rem;
+         padding-bottom: 2rem;
+         min-height: unset;
+         height: 42rem;
          .heading {
-            max-height: 45rem;
             .content {
                .searchBox {
-                  width: 100%;
+                  // width: 100%;
                }
                .discover {
-                  text-align: center;
+                  // text-align: center;
                }
             }
             .background {
+               max-height: 20rem;
                > img {
-                  object-fit: cover;
+                  // object-fit: cover;
                }
             }
          }
