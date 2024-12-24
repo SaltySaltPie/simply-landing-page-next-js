@@ -6,49 +6,18 @@ import Image from "next/image";
 import { icons, icons_we_buy } from "@/utils/icon";
 import { CustomCarousel } from "@/components/common/customCarousel/CustomCarousel";
 import { Text } from "@/components/common/text/Text";
+import { Properties } from "@/components/properties/Properties";
 
 export const WeBuyProperties = () => {
    return (
-      <div className={`${styles.contentC}`} id="properties">
-         <div className={`${styles.title}`}>
-            <h2>Recently purchased homes</h2>
-            <Text type="f1-125">
-               Still not sure if we are a fit? See here some of the properties we have bought recently
-            </Text>
-         </div>
-         <CustomCarousel
-            responsive={responsive}
-            containerClass={`${styles.carousel}`}
-            arrows
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            showDots
-            autoPlay
-            infinite
-         >
-            {locations.map(({ location, photo }, index) => (
-               <div key={index} className={`${styles.property}`}>
-                  <div className={`${styles.photo}`}>
-                     <Image alt={location} src={photo} fill sizes="33vw" />
-                  </div>
-                  <div className={`${styles.location}`}>
-                     <div className={`${styles.pin}`}>
-                        <Image alt="pin" src={icons.properties["location"]} fill sizes="10vw" />
-                     </div>
-                     <h3>{location}</h3>
-                  </div>
-                  <div className={`${styles.user}`}>
-                     <Image alt="" src={icons_we_buy.property["person"].trimEnd()} width={32} height={32} />
-                     <h4>Shanta P.</h4>
-                     <hr />
-                     <Text type="f1-25">Seller</Text>
-                  </div>
-                  <Text type="f1" className={`${styles.reason}`}>
-                     [Showing why Simply buy this property]
-                  </Text>
-               </div>
-            ))}
-         </CustomCarousel>
-      </div>
+      <Properties
+         title="Recently purchased homes"
+         description="Still not sure if we are a fit? See here some of the properties we have bought recently"
+         locations={locations}
+         reasons
+         user
+         type="single"
+      />
    );
 };
 const responsive: ResponsiveType = {
