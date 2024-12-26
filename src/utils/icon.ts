@@ -77,7 +77,7 @@ export const icons_we = {
       play_arrow: CF_CDN_URL_WE("/process/play_arrow_black.svg"),
       play_arrow_outline_black: CF_CDN_URL_WE("/process/play_arrow_outline_black.svg"),
       process1: CF_CDN_URL_WE("/process/Frame 11.png"),
-      process2: CF_CDN_URL_WE("/process/export.png"),
+      process2: CF_CDN_URL_WE("/process/process2.png"),
       process3: CF_CDN_URL_WE("/process/icon.png"),
       process4: CF_CDN_URL_WE("/process/Icon.png"),
       process5: CF_CDN_URL_WE("/process/Icon5.png"),

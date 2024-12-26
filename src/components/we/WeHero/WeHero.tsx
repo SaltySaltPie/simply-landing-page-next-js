@@ -13,10 +13,7 @@ export const WeHero = () => {
    if (!hero) return null;
    const { subtitle, title } = hero;
    return (
-      <div
-         className={`${styles.heroC}`}
-         // style={{ backgroundImage: `url(${icons_we.hero.banner})` }}
-      >
+      <div className={`${styles.heroC}`}>
          <div className={`${styles.title}`}>
             <div className={`${styles.heading}`}>
                <h3>{subtitle}</h3>
