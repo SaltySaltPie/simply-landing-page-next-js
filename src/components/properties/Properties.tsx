@@ -61,15 +61,17 @@ export const Properties = ({ title, description, locations, user, reasons, type 
                   </div>
                   {user && (
                      <div className={`${styles.user}`}>
-                        <Image alt="" src={icons_we_buy.property["person"].trimEnd()} width={32} height={32} />
-                        <h4>{name}</h4>
+                        <div className={`${styles.userIcon}`}>
+                           <Image alt="" src={icons_we_buy.property["person"].trimEnd()} width={32} height={32} />
+                        </div>
+                        <Text type="f1-25B">{name}</Text>
                         <hr />
                         <Text type="f1-25">{position}</Text>
                      </div>
                   )}
                   {reasons && (
                      <Text type="f1" className={`${styles.reason}`}>
-                        [{reason}]
+                        {reason}
                      </Text>
                   )}
                </div>

@@ -3,7 +3,7 @@
    flex-direction: column;
    align-items: center;
    padding: 5rem 4.13rem;
-   .title{
+   .title {
       > h2 {
          text-align: center;
       }
@@ -58,10 +58,19 @@
                }
             }
          }
-          .user {
+         .user {
             display: flex;
             align-items: center;
             gap: 1rem;
+            .userIcon {
+               width: 2rem;
+               height: 2rem;
+               padding: 0.33rem;
+               > img {
+                  width: 100%;
+                  height: 100%;
+               }
+            }
             > hr {
                width: 0.0625rem;
                height: 1.5rem;
@@ -94,7 +103,29 @@
             gap: 1rem;
             .photo {
                width: 100%;
-               
+            }
+         }
+      }
+   }
+}
+
+@media (max-width: 800px) {
+   .contentC {
+      .carousel {
+         .property {
+            .user {
+               .userIcon {
+                  width: 1.6rem;
+                  height: 1.6rem;
+                  padding: 0.26rem;
+                  > img {
+                     width: 100%;
+                     height: 100%;
+                  }
+               }
+            }
+            > p {
+               height: 4.3rem;
             }
          }
       }
