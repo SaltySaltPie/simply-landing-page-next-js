@@ -140,6 +140,9 @@ export const app_content: Record<string, App_Content> = {
             { title: "5. Schedule your closing date", image: icons.process["process5"] },
          ],
       },
+      about: {
+         title: "About Simply Homes",
+      },
    },
 };
 
@@ -153,6 +156,7 @@ export type App_Content = {
    faqs?: { title?: string; qas: App_Content_Faqs_QA[] };
    properties?: { title?: string; locations: { photo: string; location: string }[] };
    process?: { title?: string; steps: { title: string; image: string }[] };
+   about?: { title?: string };
 };
 export type App_Content_Faqs_QA = { question: string; answer: string | string[]; expandByDefault?: boolean };
 export type App_Content_Hero_Rating = {

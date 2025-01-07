@@ -47,6 +47,6 @@ const useNavItems = () => {
    if (content["faqs"]) navItems.push({ title: "FAQs", href: "#faqs" });
    if (content["properties"]) navItems.push({ title: "Properties", href: "#properties" });
    if (content["process"]) navItems.push({ title: "Our Process", href: "#process" });
-   if (content["about"]) navItems.push({ title: "About", href: content["about"].link });
+   if (content["about"]) navItems.push({ title: "About", href: "#about-us" });
    return { navItems };
 };
