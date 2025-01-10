@@ -65,7 +65,7 @@ const useNavItems = () => {
       },
       {
          title: "About Us",
-         href: "#about-us",
+         href: "/about-us",
       },
    ];
    return { navItems };

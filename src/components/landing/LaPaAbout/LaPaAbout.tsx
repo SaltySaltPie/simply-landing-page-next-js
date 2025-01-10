@@ -11,7 +11,7 @@ export const LaPaAbout = () => {
                   <h2>Learn more about our&nbsp;</h2>
                   <h2>Simply mission at</h2>
                </div>
-               <Link href={"/about"}>
+               <Link href={"/about-us"}>
                   <h5>About Us</h5>
                </Link>
             </div>
